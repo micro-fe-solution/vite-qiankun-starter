@@ -1,0 +1,17 @@
+{
+  "name": "vite-qiankun-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:plugin": "pnpm run build --app plugin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "redbud": "^1.2.3",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.2"
+  }
+}
