@@ -1,12 +1,12 @@
 {
   "scripts": {
     "bootstrap": "pnpm i",
-    "dev": "cross-env VITE_MICRO_MODE=true tsx ./scripts/dev.ts",
+    "dev": "cross-env VITE_MICRO_MODE=true redbud run ./scripts/dev.ts",
     "dev:main": "pnpm run dev --app main",
     "dev:subapp1": "pnpm run dev --app subapp1",
     "dev:subapp2": "pnpm run dev --app subapp2",
     "dev:subapp3": "pnpm run dev --app subapp3",
-    "build": "cross-env VITE_MICRO_MODE=true tsx ./scripts/build.ts",
+    "build": "cross-env VITE_MICRO_MODE=true redbud run ./scripts/build.ts",
     "build:plugin": "pnpm run build --app plugin",
     "build:main": "pnpm run build --app main",
     "build:subapp1": "pnpm run build --app subapp1",
@@ -46,8 +46,8 @@
     "minimist": "^1.2.6",
     "picocolors": "^1.0.0",
     "prettier": "^2.7.1",
+    "redbud": "^1.2.3",
     "standard-version": "^9.5.0",
-    "tsx": "^3.9.0",
     "typescript": "^4.8.3",
     "vite": "^3.1.3",
     "vite-plugin-dts": "^1.5.0"
