@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import type { App } from 'vue';
-import { renderWithQiankun, qiankunWindow, QiankunProps } from '@micro-fe/vite-plugin';
+import { renderWithQiankun, qiankunWindow, QiankunProps } from '@pansy/vite-plugin-qiankun';
 
 import './style.css';
 import Root from './App.vue';

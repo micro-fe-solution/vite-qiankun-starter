@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
-import MicroVitePlugin from '@micro-fe/vite-plugin';
+import MicroVitePlugin from '@pansy/vite-plugin-qiankun';
 
 // TODO: change to real deploy domain
 const DEPLOY_URL = 'http://localhost:8001';

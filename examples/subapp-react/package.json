@@ -13,7 +13,7 @@
     "react-router-dom": "^6.4.0"
   },
   "devDependencies": {
-    "@micro-fe/vite-plugin": "workspace:*",
+    "@pansy/vite-plugin-qiankun": "workspace:*",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",

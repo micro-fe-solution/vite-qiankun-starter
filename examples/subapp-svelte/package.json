@@ -9,7 +9,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@micro-fe/vite-plugin": "workspace:^0.0.1",
+    "@pansy/vite-plugin-qiankun": "workspace:*",
     "@sveltejs/vite-plugin-svelte": "^1.0.7",
     "@tsconfig/svelte": "^3.0.0",
     "svelte": "^3.50.1",

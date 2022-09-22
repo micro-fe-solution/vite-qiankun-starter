@@ -7,7 +7,7 @@ Inspired by [vite-plugin-qiankun](https://github.com/tengmaoqing/vite-plugin-qia
 1. Install plugin for vite config file `vite.config.ts`:
 
 ```typescript
-import MicroVitePlugin from '@micro-fe/vite-plugin';
+import MicroVitePlugin from '@pansy/vite-plugin-qiankun';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,7 +22,7 @@ export default defineConfig({
 2. Use lifecycle in entry file `src/main.ts`:
 
 ```typescript
-import { renderWithQiankun, qiankunWindow, QiankunProps } from '@micro-fe/vite-plugin';
+import { renderWithQiankun, qiankunWindow, QiankunProps } from '@pansy/vite-plugin-qiankun';
 
 renderWithQiankun({
   bootstrap() {

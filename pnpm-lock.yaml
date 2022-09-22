@@ -137,7 +137,7 @@ importers:
 
   examples/subapp-react:
     specifiers:
-      '@micro-fe/vite-plugin': workspace:*
+      '@pansy/vite-plugin-qiankun': workspace:*
       '@types/react': ^18.0.20
       '@types/react-dom': ^18.0.6
       '@vitejs/plugin-react': ^2.1.0
@@ -151,7 +151,7 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       react-router-dom: 6.4.0_biqbaboplfbrettd7655fr4n2y
     devDependencies:
-      '@micro-fe/vite-plugin': link:../../packages/plugin
+      '@pansy/vite-plugin-qiankun': link:../../packages/plugin
       '@types/react': 18.0.20
       '@types/react-dom': 18.0.6
       '@vitejs/plugin-react': 2.1.0_vite@3.1.3
@@ -160,7 +160,7 @@ importers:
 
   examples/subapp-svelte:
     specifiers:
-      '@micro-fe/vite-plugin': workspace:^0.0.1
+      '@pansy/vite-plugin-qiankun': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.7
       '@tsconfig/svelte': ^3.0.0
       svelte: ^3.50.1
@@ -170,7 +170,7 @@ importers:
       typescript: ^4.8.3
       vite: ^3.1.3
     devDependencies:
-      '@micro-fe/vite-plugin': link:../../packages/plugin
+      '@pansy/vite-plugin-qiankun': link:../../packages/plugin
       '@sveltejs/vite-plugin-svelte': 1.0.7_svelte@3.50.1+vite@3.1.3
       '@tsconfig/svelte': 3.0.0
       svelte: 3.50.1
@@ -182,7 +182,7 @@ importers:
 
   examples/subapp-vue:
     specifiers:
-      '@micro-fe/vite-plugin': workspace:*
+      '@pansy/vite-plugin-qiankun': workspace:*
       '@vitejs/plugin-vue': ^3.1.0
       typescript: ^4.8.3
       vite: ^3.1.3
@@ -193,7 +193,7 @@ importers:
       vue: 3.2.39
       vue-router: 4.1.5_vue@3.2.39
     devDependencies:
-      '@micro-fe/vite-plugin': link:../../packages/plugin
+      '@pansy/vite-plugin-qiankun': link:../../packages/plugin
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.3+vue@3.2.39
       typescript: 4.8.3
       vite: 3.1.3

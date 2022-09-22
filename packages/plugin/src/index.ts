@@ -66,7 +66,7 @@ const plugin: PluginFn = (qiankunName, microOption = {}) => {
   };
 
   return {
-    name: '@micro-fe/vite-plugin',
+    name: '@pansy/vite-plugin-qiankun',
     configResolved(config) {
       isProduction = config.command === 'build' || config.isProduction;
       base = config.base;

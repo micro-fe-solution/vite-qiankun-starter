@@ -1,6 +1,6 @@
 {
-  "name": "@micro-fe/vite-plugin",
-  "version": "0.0.1",
+  "name": "@pansy/vite-plugin-qiankun",
+  "version": "1.0.0",
   "description": "Qiankun plugin for vite",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

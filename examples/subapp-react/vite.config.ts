@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
-import MicroVitePlugin from '@micro-fe/vite-plugin';
+import MicroVitePlugin from '@pansy/vite-plugin-qiankun';
 
 const VITE_APP_NAME = 'subapp2';
 const DEV_HOST = 'localhost';

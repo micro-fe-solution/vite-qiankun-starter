@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
-import { default as MicroVitePlugin } from '@micro-fe/vite-plugin';
+import MicroVitePlugin from '@pansy/vite-plugin-qiankun';
 
 const VITE_APP_NAME = 'subapp3';
 const DEV_HOST = 'localhost';

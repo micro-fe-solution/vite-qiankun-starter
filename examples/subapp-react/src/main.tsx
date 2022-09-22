@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM, { Root } from 'react-dom/client';
 
-import { renderWithQiankun, qiankunWindow, QiankunProps } from '@micro-fe/vite-plugin';
+import { renderWithQiankun, qiankunWindow, QiankunProps } from '@pansy/vite-plugin-qiankun';
 
 import Router from './router';
 import './index.css';
