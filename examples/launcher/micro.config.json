@@ -3,7 +3,7 @@
     {
       "name": "subapp1",
       "type": "vue",
-      "devEntry": "//localhost:8001",
+      "devEntry": "http://localhost:8001",
       "entry": "http://localhost:8001",
       "container": "#subapp-container",
       "activeRule": "/subapp1/"
@@ -11,7 +11,7 @@
     {
       "name": "subapp2",
       "type": "react",
-      "devEntry": "//localhost:8002",
+      "devEntry": "http://localhost:8002",
       "entry": "http://localhost:8002",
       "container": "#subapp-container",
       "activeRule": "/subapp2/"
@@ -19,7 +19,7 @@
     {
       "name": "subapp3",
       "type": "svelte",
-      "devEntry": "//localhost:8003",
+      "devEntry": "http://localhost:8003",
       "entry": "http://localhost:8003",
       "container": "#subapp-container",
       "activeRule": "/subapp3/"
