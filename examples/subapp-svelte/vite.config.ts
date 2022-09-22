@@ -6,7 +6,6 @@ import MicroVitePlugin from '@pansy/vite-plugin-qiankun';
 const VITE_APP_NAME = 'subapp3';
 const DEV_HOST = 'localhost';
 const DEV_PORT = 8003;
-// TODO: change to real deploy domain
 const DEPLOY_URL = 'http://localhost:8003';
 const isProd = process.env.NODE_ENV === 'production';
 const isMicro = process.env.VITE_MICRO_MODE === 'true';
@@ -27,7 +26,6 @@ export default defineConfig({
     }
   },
   plugins: [
-    // ...(isProd ? svelte() : []),
     svelte({}),
     MicroVitePlugin(VITE_APP_NAME, {
       useDevMode: !isProd
