@@ -1,8 +1,0 @@
-.vscoode
-dist
-node_modules
-
-pnpm-lock.yaml
-*.json
-
-public/mockServiceWorker.js

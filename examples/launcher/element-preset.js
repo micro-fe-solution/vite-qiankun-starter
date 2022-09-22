@@ -1,29 +1,29 @@
 const palettes = {
-    base: ['primary', 'success', 'warning', 'danger', 'error', 'info'],
-    hasLight9: ['primary'],
-    hasLight2: ['success', 'warning', 'danger', 'error', 'info'], // danger === error
+  base: ['primary', 'success', 'warning', 'danger', 'error', 'info'],
+  hasLight9: ['primary'],
+  hasLight2: ['success', 'warning', 'danger', 'error', 'info'], // danger === error
 };
 
 const hasLight9 = function (group) {
-    const colors = {};
-    group.forEach((name) => {
-        colors[`el-${name}-light`] = {};
-        for (let index = 9; index > 0; index--) {
-            colors[`el-${name}-light`][
-                index * 100
-            ] = `var(--el-color-${name}-light-${index})`;
-        }
-    });
-    return colors;
+  const colors = {};
+  group.forEach((name) => {
+    colors[`el-${name}-light`] = {};
+    for (let index = 9; index > 0; index--) {
+      colors[`el-${name}-light`][
+        index * 100
+      ] = `var(--el-color-${name}-light-${index})`;
+    }
+  });
+  return colors;
 };
 
 const hasLight2 = function (group) {
-    const colors = {};
-    group.forEach((name) => {
-        colors[`el-${name}-light`] = `var(--el-color-${name}-light)`;
-        colors[`el-${name}-lighter`] = `var(--el-color-${name}-lighter)`;
-    });
-    return colors;
+  const colors = {};
+  group.forEach((name) => {
+    colors[`el-${name}-light`] = `var(--el-color-${name}-light)`;
+    colors[`el-${name}-lighter`] = `var(--el-color-${name}-lighter)`;
+  });
+  return colors;
 };
 
 const baseColor = function (group) {
