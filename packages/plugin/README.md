@@ -11,47 +11,43 @@ import MicroVitePlugin from '@micro-fe/vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        MicroVitePlugin('subapp1', {
-            useDevMode: true,
-        }),
-    ],
+  plugins: [
+    MicroVitePlugin('subapp1', {
+      useDevMode: true
+    })
+  ]
 });
 ```
 
 2. Use lifecycle in entry file `src/main.ts`:
 
 ```typescript
-import {
-    renderWithQiankun,
-    qiankunWindow,
-    QiankunProps,
-} from '@micro-fe/vite-plugin';
+import { renderWithQiankun, qiankunWindow, QiankunProps } from '@micro-fe/vite-plugin';
 
 renderWithQiankun({
-    bootstrap() {
-        console.log('[vue] vue app bootstraped');
-    },
-    mount(props: MountProps) {
-        console.log('[vue] props from main framework', props);
-        render(props);
-        // storeTest(props);
-    },
-    update: function (props: QiankunProps): void | Promise<void> {
-        throw new Error('Function not implemented.');
-    },
-    unmount() {
-        if (app) {
-            app.unmount();
-            app = null;
-            history.destroy();
-        }
-    },
+  bootstrap() {
+    console.log('[vue] vue app bootstraped');
+  },
+  mount(props: MountProps) {
+    console.log('[vue] props from main framework', props);
+    render(props);
+    // storeTest(props);
+  },
+  update: function (props: QiankunProps): void | Promise<void> {
+    throw new Error('Function not implemented.');
+  },
+  unmount() {
+    if (app) {
+      app.unmount();
+      app = null;
+      history.destroy();
+    }
+  }
 });
 
 // render when run alone
 if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-    render();
+  render();
 }
 ```
 

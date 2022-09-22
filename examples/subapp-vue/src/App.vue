@@ -1,28 +1,28 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="container">
-        <div class="links">
-            <span class="label"> Internal Navigation: </span>
-            <div class="link-list">
-                <RouterLink to="/">Home</RouterLink> |
-                <RouterLink to="/about">About</RouterLink>
-            </div>
-        </div>
-        <RouterView />
+  <div class="container">
+    <div class="links">
+      <span class="label"> Internal Navigation: </span>
+      <div class="link-list">
+        <RouterLink to="/">Home</RouterLink> |
+        <RouterLink to="/about">About</RouterLink>
+      </div>
     </div>
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
 .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
 }
 .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
+  filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>

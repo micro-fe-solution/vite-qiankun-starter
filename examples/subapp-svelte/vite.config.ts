@@ -13,35 +13,35 @@ const isMicro = process.env.VITE_MICRO_MODE === 'true';
 
 let base = '/';
 if (isProd) {
-    base = DEPLOY_URL;
+  base = DEPLOY_URL;
 } else if (isMicro) {
-    base = `/${VITE_APP_NAME}/`;
+  base = `/${VITE_APP_NAME}/`;
 }
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base,
-    resolve: {
-        alias: {
-            '@': resolve(__dirname, 'src'),
-        },
+  base,
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src')
+    }
+  },
+  plugins: [
+    // ...(isProd ? svelte() : []),
+    svelte({}),
+    MicroVitePlugin(VITE_APP_NAME, {
+      useDevMode: !isProd
+    })
+  ],
+  server: {
+    cors: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*'
     },
-    plugins: [
-        // ...(isProd ? svelte() : []),
-        svelte({}),
-        MicroVitePlugin(VITE_APP_NAME, {
-            useDevMode: !isProd,
-        }),
-    ],
-    server: {
-        cors: true,
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-        },
-        port: DEV_PORT,
-        hmr: {
-            host: DEV_HOST,
-            port: DEV_PORT,
-        },
-    },
+    port: DEV_PORT,
+    hmr: {
+      host: DEV_HOST,
+      port: DEV_PORT
+    }
+  }
 });

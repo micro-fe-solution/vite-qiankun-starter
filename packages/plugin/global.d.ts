@@ -1,4 +1,4 @@
 interface Window {
-    proxy: any;
-    moudleQiankunAppLifeCycles: any;
+  proxy: any;
+  moudleQiankunAppLifeCycles: any;
 }
