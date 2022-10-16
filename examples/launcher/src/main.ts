@@ -1,10 +1,10 @@
 import { createApp } from 'vue';
 import ElementPlus from 'element-plus';
 import {
-    initGlobalState,
-    registerMicroApps,
-    runAfterFirstMounted,
-    start,
+  initGlobalState,
+  registerMicroApps,
+  runAfterFirstMounted,
+  start,
 } from 'qiankun';
 
 import { apps } from '../micro.config.json';
