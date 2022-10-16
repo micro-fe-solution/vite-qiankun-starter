@@ -127,11 +127,13 @@ importers:
       qiankun: 2.8.3
       react: ^18.2.0
       react-dom: ^18.2.0
+      react-router: 6.3.0
       react-router-dom: 6.3.0
     dependencies:
       qiankun: 2.8.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      react-router: 6.3.0_react@18.2.0
       react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
     devDependencies:
       '@types/react': 18.0.21
