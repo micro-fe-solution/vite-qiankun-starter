@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import {
   useOutlet
-} from "react-router-dom";
+} from 'react-router-dom';
+import { Button } from 'antd';
 import reactLogo from './assets/react.svg'
 import './App.css'
 
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <Button>测试点击</Button>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />

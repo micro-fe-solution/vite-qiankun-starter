@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import Root from './App';
 
+import 'antd/dist/antd.css';
+
 import { apps } from '../micro.config.json';
 
 const isDev = process.env.NODE_ENV === 'development';
