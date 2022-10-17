@@ -33,6 +33,13 @@ export default defineConfig({
   build: {
     minify: false,
   },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
   plugins: [react()],
   server: {
     cors: true,
