@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import viteLogo from '@/assets/vite.svg';
 import reactLogo from '@/assets/react.svg';
 import './index.css';

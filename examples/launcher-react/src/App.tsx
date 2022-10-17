@@ -1,10 +1,6 @@
-import { useState } from 'react'
-import {
-  useOutlet
-} from 'react-router-dom';
+import { useOutlet } from 'react-router-dom';
 import { Button } from 'antd';
 import reactLogo from './assets/react.svg'
-import './App.css'
 
 function App() {
   const outlet = useOutlet()

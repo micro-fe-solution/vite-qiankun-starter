@@ -1,5 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client';
+import { BasicLayout } from '@/layouts';
 import {
   registerMicroApps,
   runAfterFirstMounted,
@@ -21,7 +22,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <BasicLayout />,
     children: [
       {
         path: "contact",
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: "about",
+    element: <div>About</div>,
   },
 ]);
 
