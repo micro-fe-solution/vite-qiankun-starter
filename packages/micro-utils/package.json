@@ -10,6 +10,7 @@
     "lib"
   ],
   "scripts": {
+    "dev": "redbud dev",
     "build": "redbud build"
   },
   "keywords": [],
