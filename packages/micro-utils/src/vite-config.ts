@@ -1,50 +1,48 @@
-import { mergeConfig } from 'vite';
-import path from 'path';
+import { mergeConfig } from 'vite'
+import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import react from '@vitejs/plugin-react'
 import qiankun from 'vite-plugin-qiankun'
 import vitePluginImp from 'vite-plugin-imp'
 
-interface Options {
-  frame?: 'react' | 'vue';
-  micro?: boolean;
-  moduleName?: string;
-  dirName?: string;
-}
+import type { UserConfig } from 'vite'
+import type { GetViteConfigOptions, Frame } from './types';
+
+const initialPluginsConfig: Record<Frame, UserConfig['plugins']> = {
+  vue: [vue()],
+  react: [
+    react(),
+    vitePluginImp({
+      libList: [
+        {
+          libName: 'antd',
+          style: (name) => `antd/es/${name}/style/css`,
+        },
+        {
+          libName: '@ant-design/icons',
+          libDirectory: '',
+          camel2DashComponentName: false,
+        },
+      ],
+    }),
+  ]
+};
 
 export const getViteConfig = ({
+  root = process.cwd(),
   frame = 'react',
   micro = true,
   moduleName = '',
-  dirName = process.cwd(),
-}: Options = {}) => {
+}: GetViteConfigOptions = {}) => {
   const serverConfig = {
     strictPort: true,
     proxy: {},
   }
 
-  const initialPlugins = {
-    vue: [vue()],
-    react: [
-      react(),
-      vitePluginImp({
-        libList: [
-          {
-            libName: 'antd',
-            style: (name) => `antd/es/${name}/style/css`,
-          },
-          {
-            libName: '@ant-design/icons',
-            libDirectory: '',
-            camel2DashComponentName: false,
-          },
-        ],
-      }),
-    ]
-  }[frame];
+  const initialPlugins = initialPluginsConfig[frame];
 
   const sharedViteConfig = {
-    base: dirName,
+    root,
     server: serverConfig,
     preview: serverConfig,
     resolve: {
@@ -53,7 +51,7 @@ export const getViteConfig = ({
         // less import no support webpack alias '~' · Issue #2185 · vitejs/vite
         // https://github.com/vitejs/vite/issues/2185
         { find: /^~/, replacement: '' },
-        { find: '@', replacement: path.resolve(dirName, './src') },
+        { find: '@', replacement: path.resolve(root, './src') },
         {
           find: 'mqtt',
           replacement: 'mqtt/dist/mqtt.js',
@@ -75,13 +73,8 @@ export const getViteConfig = ({
   }
 
   const microViteConfig = mergeConfig(sharedViteConfig, {
-    base: moduleName ? `/${moduleName}/` : '/',
+    base: `/${moduleName}/`,
     plugins: [qiankun(moduleName, {})],
-    build: {
-      rollupOptions: {
-        external: ['@/hmr.fix'],
-      },
-    },
   })
 
   return microViteConfig

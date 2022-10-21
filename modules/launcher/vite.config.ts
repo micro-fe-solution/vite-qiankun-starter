@@ -2,7 +2,7 @@ import { defineConfig, mergeConfig } from 'vite'
 import { getViteConfig } from 'vite-micro-utils'
 
 const sharedConfig = getViteConfig({
-  dirname: __dirname,
+  root: __dirname,
 })
 
 // https://vitejs.dev/config/

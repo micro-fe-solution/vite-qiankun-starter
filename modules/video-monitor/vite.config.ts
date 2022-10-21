@@ -2,8 +2,8 @@ import { defineConfig, mergeConfig } from 'vite'
 import { getViteConfig } from 'vite-micro-utils'
 
 const sharedConfig = getViteConfig({
+  root: __dirname,
   moduleName: 'video-monitor',
-  dirname: __dirname,
 })
 
 // https://vitejs.dev/config/
