@@ -11,12 +11,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lins-material/components": "1.18.0",
+    "@lins-material/components": "1.18.3",
     "@sensoro-design/icons": "1.49.0",
-    "@sensoro-design/styles": "1.7.0",
+    "@sensoro-design/styles": "1.8.0",
     "antd": "4.23.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "6.3.0",
     "regenerator-runtime": "^0.13.10",
     "vite-plugin-qiankun": "^1.0.15"
   },

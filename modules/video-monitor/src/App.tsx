@@ -1,7 +1,10 @@
-import { Button } from 'antd';
+import { BrowserRouter } from 'react-router-dom'
+import { Routes } from '@/routes'
 
 export const App = () => {
   return (
-    <Button>提交</Button>
+    <BrowserRouter basename="video-monitor">
+      <Routes />
+    </BrowserRouter>
   )
 }

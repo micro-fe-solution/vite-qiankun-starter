@@ -11,9 +11,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lins-material/components": "1.18.0",
+    "@lins-material/components": "1.18.3",
     "@lins-material/login": "1.14.5",
-    "@sensoro-design/styles": "1.7.0",
+    "@sensoro-design/styles": "1.8.0",
     "@sensoro-design/icons": "1.49.0",
     "@pansy/react-hooks": "0.12.2",
     "@pansy/react-amap": "2.15.1",
