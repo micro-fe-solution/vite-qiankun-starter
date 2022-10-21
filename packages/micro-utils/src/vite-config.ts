@@ -73,7 +73,7 @@ export const getViteConfig = ({
   }
 
   const microViteConfig = mergeConfig(sharedViteConfig, {
-    base: moduleName ?`/${moduleName}` : undefined,
+    base: moduleName ?`/${moduleName}/` : undefined,
     plugins: [qiankun(moduleName, {})],
   })
 
