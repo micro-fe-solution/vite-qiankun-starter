@@ -1,0 +1,25 @@
+{
+  "name": "vite-micro-utils",
+  "version": "1.0.0",
+  "description": "vite 微前端工具",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "build": "redbud build"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "mqtt": "^4.3.7",
+    "vite-plugin-qiankun": "^1.0.15",
+    "vite-plugin-imp": "^2.3.0",
+    "vite": "^3.1.8"
+  }
+}
