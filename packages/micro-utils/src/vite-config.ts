@@ -18,11 +18,11 @@ const initialPluginsConfig: Record<Frame, UserConfig['plugins']> = {
           libName: 'antd',
           style: (name) => `antd/es/${name}/style/css`,
         },
-        {
-          libName: '@ant-design/icons',
-          libDirectory: '',
-          camel2DashComponentName: false,
-        },
+        // {
+        //   libName: '@ant-design/icons',
+        //   libDirectory: '',
+        //   camel2DashComponentName: false,
+        // },
       ],
     }),
   ]
@@ -73,7 +73,7 @@ export const getViteConfig = ({
   }
 
   const microViteConfig = mergeConfig(sharedViteConfig, {
-    base: `/${moduleName}/`,
+    base: moduleName ?`/${moduleName}` : undefined,
     plugins: [qiankun(moduleName, {})],
   })
 

@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
 import { Map } from '@pansy/react-amap';
 
 export default function Home() {
   return (
-    <div style={{ height: 900 }}>
+    <div style={{ height: '100vh' }}>
       <Map />
     </div>
   )
