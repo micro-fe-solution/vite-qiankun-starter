@@ -2,10 +2,12 @@ import { defineConfig } from 'redbud';
 
 export default defineConfig({
   esm: {
-    output: 'es'
+    output: 'es',
+    transformer: 'babel'
   },
   cjs: {
-    output: 'lib'
+    output: 'lib',
+    transformer: 'babel'
   },
   platform: 'node'
 });
