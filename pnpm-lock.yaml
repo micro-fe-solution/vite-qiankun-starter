@@ -4,11 +4,13 @@ importers:
 
   .:
     specifiers:
+      '@types/node': ^18.11.3
       kill-port: ^2.0.1
       redbud: ^1.2.5
       rimraf: ^3.0.2
       typescript: ^4.8.4
     devDependencies:
+      '@types/node': 18.11.3
       kill-port: 2.0.1
       redbud: 1.2.5
       rimraf: 3.0.2
@@ -20,7 +22,6 @@ importers:
       '@lins-material/components': 1.18.3
       '@lins-material/login': 1.14.5
       '@pansy/micro-shared': 1.0.0
-      '@pansy/react-amap': 2.15.1
       '@pansy/react-hooks': 0.12.2
       '@sensoro-design/icons': 1.50.0
       '@sensoro-design/styles': 1.8.0
@@ -44,7 +45,6 @@ importers:
       '@lins-material/components': 1.18.3_elp4rueuph7qjxnnvfzlkecbcu
       '@lins-material/login': 1.14.5_react@18.2.0
       '@pansy/micro-shared': link:../../packages/micro-shared
-      '@pansy/react-amap': 2.15.1_react@18.2.0
       '@pansy/react-hooks': 0.12.2_react@18.2.0
       '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       '@sensoro-design/styles': 1.8.0
@@ -2188,8 +2188,8 @@ packages:
     resolution: {integrity: sha512-yxDeaQIAJlMav7fH5AQqPH1u8YIuhYJXYBzxaQ4PifsU0GDO38MSdmEDeRlIxrKbC6NbEaaEHDanWb+y30U8SQ==}
     dev: true
 
-  /@types/node/18.11.0:
-    resolution: {integrity: sha512-IOXCvVRToe7e0ny7HpT/X9Rb2RYtElG1a+VshjwT00HxrM2dWBApHQoqsI6WiY7Q03vdf2bCrIGzVrkF/5t10w==}
+  /@types/node/18.11.3:
+    resolution: {integrity: sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -4474,7 +4474,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.11.0
+      '@types/node': 18.11.3
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true

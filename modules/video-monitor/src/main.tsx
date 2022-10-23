@@ -4,8 +4,6 @@ import { unmountComponentAtNode } from 'react-dom';
 import { renderWithQiankun } from 'vite-plugin-qiankun/dist/helper'
 import { App } from './App'
 
-// import '@sensoro-design/styles/dist/styles.min.css';
-
 const appName = 'video-monitor'
 
 export default function start(props: any = {}) {
@@ -48,7 +46,10 @@ renderWithQiankun({
   },
 })
 
-// @ts-ignore
 if (!window.__POWERED_BY_QIANKUN__) {
   start()
+}
+
+if (process.env.NODE_ENV === 'development') {
+  import('@/hmr.fix')
 }
