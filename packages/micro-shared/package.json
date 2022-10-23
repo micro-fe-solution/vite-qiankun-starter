@@ -22,7 +22,7 @@
     "react": "^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@douyinfe/semi-ui": "2.21.2",
+    "antd": "4.23.2",
     "qiankun": "^2.8.3",
     "react-router-dom": "6.3.0"
   },

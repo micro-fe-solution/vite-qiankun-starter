@@ -160,15 +160,15 @@ importers:
 
   packages/micro-shared:
     specifiers:
-      '@douyinfe/semi-ui': 2.21.2
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
+      antd: 4.23.2
       qiankun: ^2.8.3
       react: 18.2.0
       react-dom: 18.2.0
       react-router-dom: 6.3.0
     dependencies:
-      '@douyinfe/semi-ui': 2.21.2_biqbaboplfbrettd7655fr4n2y
+      antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       qiankun: 2.8.3
       react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
     devDependencies:
