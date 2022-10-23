@@ -13,7 +13,6 @@
   "dependencies": {
     "@lins-material/components": "1.18.3",
     "@lins-material/login": "1.14.5",
-    "@pansy/react-amap": "2.15.1",
     "@pansy/micro-shared": "1.0.0",
     "@pansy/react-hooks": "0.12.2",
     "@sensoro-design/icons": "1.50.0",

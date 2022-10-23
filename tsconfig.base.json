@@ -5,18 +5,14 @@
     "moduleResolution": "node",
     "jsx": "react-jsx",
     "strict": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "useDefineForClassFields": true,
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "exclude": ["node_modules", "dist", "es", "lib"]
+    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+  }
 }
