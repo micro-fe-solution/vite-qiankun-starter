@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { loadMicroApp, initGlobalState } from 'qiankun'
-import React, { useState, useRef, useEffect, memo, lazy } from 'react'
+import { useState, useRef, useEffect, memo, lazy } from 'react'
 
 import type { FrameworkConfiguration, MicroApp as QMicroApp } from 'qiankun'
 
@@ -38,7 +38,7 @@ const BaseMicroApp = memo(function MicroApp({
   const [ready, setReady] = useState(false)
 
   const microApp = useRef<QMicroApp>()
-  const container = useRef<any>()
+  const container = useRef<HTMLDivElement>(null)
 
   useEffect(
     () => {
@@ -51,7 +51,7 @@ const BaseMicroApp = memo(function MicroApp({
           {
             name,
             entry: entry!,
-            container: container.current,
+            container: container.current!,
             props,
           },
           {
@@ -105,7 +105,7 @@ const BaseMicroApp = memo(function MicroApp({
   return (
     <>
       <div className="micro-wrapper" ref={container} />
-      {!ready && <Lazy />}
+      {/* {!ready && <Lazy />} */}
     </>
   )
 })

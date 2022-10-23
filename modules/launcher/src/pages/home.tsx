@@ -1,6 +1,5 @@
 import { proxy, useSnapshot } from 'valtio';
 import { Button } from '@douyinfe/semi-ui';
-import { Map } from '@pansy/react-amap';
 
 const store = proxy({
   count: 0,

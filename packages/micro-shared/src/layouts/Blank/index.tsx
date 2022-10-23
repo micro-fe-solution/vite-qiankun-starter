@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
 
-export default function Blank() {
+export function BlankLayout() {
   return <Outlet />
 }
