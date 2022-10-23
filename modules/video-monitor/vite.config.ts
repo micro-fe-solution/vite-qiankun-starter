@@ -11,7 +11,7 @@ export default defineConfig(
   mergeConfig(sharedConfig, {
     server: {
       host: true,
-      port: 8071,
+      port: 8701,
     },
   })
 )

@@ -10,9 +10,9 @@ export default defineConfig(
   mergeConfig(sharedConfig, {
     server: {
       host: true,
-      port: 8070,
+      port: 8700,
       proxy: {
-        '/video-monitor': 'http://localhost:8071',
+        '/video-monitor': 'http://localhost:8701',
       },
     },
   })
