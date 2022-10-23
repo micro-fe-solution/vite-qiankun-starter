@@ -19,9 +19,10 @@ importers:
       '@douyinfe/semi-ui': 2.21.2
       '@lins-material/components': 1.18.3
       '@lins-material/login': 1.14.5
+      '@pansy/micro-shared': 1.0.0
       '@pansy/react-amap': 2.15.1
       '@pansy/react-hooks': 0.12.2
-      '@sensoro-design/icons': 1.49.0
+      '@sensoro-design/icons': 1.50.0
       '@sensoro-design/styles': 1.8.0
       '@types/lodash': ^4.14.186
       '@types/react': ^18.0.21
@@ -42,9 +43,10 @@ importers:
       '@douyinfe/semi-ui': 2.21.2_biqbaboplfbrettd7655fr4n2y
       '@lins-material/components': 1.18.3_elp4rueuph7qjxnnvfzlkecbcu
       '@lins-material/login': 1.14.5_react@18.2.0
+      '@pansy/micro-shared': link:../../packages/micro-shared
       '@pansy/react-amap': 2.15.1_react@18.2.0
       '@pansy/react-hooks': 0.12.2_react@18.2.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       '@sensoro-design/styles': 1.8.0
       antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
@@ -66,7 +68,8 @@ importers:
   modules/video-monitor:
     specifiers:
       '@lins-material/components': 1.18.3
-      '@sensoro-design/icons': 1.49.0
+      '@pansy/micro-shared': 1.0.0
+      '@sensoro-design/icons': 1.50.0
       '@sensoro-design/styles': 1.8.0
       '@types/react': ^18.0.21
       '@types/react-dom': ^18.0.6
@@ -83,7 +86,8 @@ importers:
       vite-plugin-qiankun: ^1.0.15
     dependencies:
       '@lins-material/components': 1.18.3_elp4rueuph7qjxnnvfzlkecbcu
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@pansy/micro-shared': link:../../packages/micro-shared
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       '@sensoro-design/styles': 1.8.0
       antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
@@ -99,6 +103,25 @@ importers:
       typescript: 4.8.4
       vite: 3.1.8_less@4.1.3
       vite-micro-utils: link:../../packages/vite-micro-utils
+
+  packages/micro-shared:
+    specifiers:
+      '@douyinfe/semi-ui': 2.21.2
+      '@types/react': ^18.0.21
+      '@types/react-dom': ^18.0.6
+      qiankun: ^2.8.3
+      react: 18.2.0
+      react-dom: 18.2.0
+      react-router-dom: 6.3.0
+    dependencies:
+      '@douyinfe/semi-ui': 2.21.2_biqbaboplfbrettd7655fr4n2y
+      qiankun: 2.8.3
+      react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
+    devDependencies:
+      '@types/react': 18.0.21
+      '@types/react-dom': 18.0.6
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
 
   packages/vite-micro-utils:
     specifiers:
@@ -855,7 +878,7 @@ packages:
     resolution: {integrity: sha512-5qzYk28o4NXIjOCfJCaOQJTpXuKPFxo2av170nyeUmOhk5g3lV86y5fg9IkhX0TYLloUhwEScRvxVwOflHAQxw==}
     dependencies:
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -887,7 +910,7 @@ packages:
       '@pansy/react-aliplayer': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/react-fullscreen': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -929,7 +952,7 @@ packages:
     resolution: {integrity: sha512-QuiFAYCzX6t9BDhuytbAM5+f1Ggrjo6tRBk1Pm1kRYjSh74XbuA8G9OCNx/sEBkE10N00Km4PovFa4jis3RdcQ==}
     dependencies:
       '@babel/runtime': 7.19.4
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
       - react
       - react-dom
@@ -949,7 +972,7 @@ packages:
       '@lins-material/tree': 1.6.3_biqbaboplfbrettd7655fr4n2y
       '@pansy/array-to-tree': 0.3.0
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
       - react
       - react-dom
@@ -968,7 +991,7 @@ packages:
       '@pansy/react-aliplayer': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/react-fullscreen': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -980,7 +1003,7 @@ packages:
     dependencies:
       '@pansy/react-hooks': 0.12.2_react@18.2.0
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
       - bufferutil
       - react
@@ -1017,7 +1040,7 @@ packages:
     resolution: {integrity: sha512-G9VM2MFLv7tO2mQZqoqfCeJI935i6LkzH7b+NmeDGf2OxRIeLSKeRHge5KiY13EPppOgB0TcDyv2UY4Hk3ISsQ==}
     dependencies:
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash-es: 4.17.21
       resize-observer-polyfill: 1.5.1
     transitivePeerDependencies:
@@ -1039,7 +1062,7 @@ packages:
       '@lins-material/no-field': 1.3.0
       '@lins-material/operation': 0.13.2_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -1056,7 +1079,7 @@ packages:
     resolution: {integrity: sha512-BgOwCvXEVYIALpoo19IQPR/tzBcW8QfFQsL/R59Du4tHtD3jdELAXFNM1Mpbu9b1lWRXUgarbBC8ZpFMNukCrA==}
     dependencies:
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.49.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
       react-sortable-hoc: 2.0.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
@@ -1924,12 +1947,12 @@ packages:
       string-argv: 0.3.1
     dev: true
 
-  /@sensoro-design/icons-svg/1.51.0:
-    resolution: {integrity: sha512-4qfCX71IMI/PrDdkErVxH68HGRLKQgJ4zHiI41CirvW4ioGQh0ShOfhAp483HWVEx8PJP0rE6dH915JGTuzI/A==}
+  /@sensoro-design/icons-svg/1.52.0:
+    resolution: {integrity: sha512-Xm5y9Grup5wfoMA5NfTnNXVupVKycWRFsha3mE5h1Xq65Pt4A6H6dXYRm1ZqkySiJTFczkiyIFXeE1yMElDKpQ==}
     dev: false
 
-  /@sensoro-design/icons/1.49.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-tetR54j1LC+D77AzjNHhRatMDb3hbHQrcCQV1w4Q4roYXELjT5ulo97l64zOwWSrDCOKIHtPHcVFVCaXhi5lqw==}
+  /@sensoro-design/icons/1.50.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-/Eblrj6Ogjbekq4p5i/U4hjiSt+3hC7ImcP3U7n7B/Ege+TbTf9ChcTGDQlVyG4u7pZ/IFvIQorrm7Et6cQBbw==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -1937,7 +1960,7 @@ packages:
       '@ant-design/colors': 6.0.0
       '@babel/runtime': 7.19.4
       '@pansy/classnames': 1.0.1
-      '@sensoro-design/icons-svg': 1.51.0
+      '@sensoro-design/icons-svg': 1.52.0
       rc-util: 5.24.4_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -4416,7 +4439,6 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
-    dev: false
 
   /lower-case/2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
@@ -5932,7 +5954,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
 
   /react-draggable/4.4.5_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-OMHzJdyJbYTZo4uQE393fHcqqPYsEtkjfMgvCHr6rejT+Ezn4OZbNyGH50vv+SunC1RMvwOTSWkEODQLzw1M9g==}
@@ -6022,7 +6043,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /readable-stream/2.3.7:
     resolution: {integrity: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==}
@@ -6230,7 +6250,6 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /schema-utils/3.1.1:
     resolution: {integrity: sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==}

@@ -1,0 +1,35 @@
+{
+  "name": "@pansy/micro-shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "scripts": {
+    "dev": "redbud dev",
+    "build": "redbud build"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "shared",
+    "components"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@douyinfe/semi-ui": "2.21.2",
+    "qiankun": "^2.8.3",
+    "react-router-dom": "6.3.0"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6"
+  }
+}

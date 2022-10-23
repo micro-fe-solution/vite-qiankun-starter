@@ -1,5 +1,5 @@
-import { Suspense, useMemo, lazy } from 'react'
-import { useLocation } from 'react-router-dom';
+import React, { Suspense, useMemo, lazy } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export const Lazy = ({ entry }: any) => {
   const location = useLocation();

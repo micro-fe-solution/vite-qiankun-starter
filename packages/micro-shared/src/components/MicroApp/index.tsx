@@ -1,9 +1,8 @@
 import { useLocation } from 'react-router-dom'
 import { loadMicroApp, initGlobalState } from 'qiankun'
-import { useState, useRef, useEffect, memo, lazy } from 'react'
+import React, { useState, useRef, useEffect, memo, lazy } from 'react'
 
 import type { FrameworkConfiguration, MicroApp as QMicroApp } from 'qiankun'
-
 
 interface MicroAppProps extends FrameworkConfiguration {
   /** 微应用的名称 */
@@ -29,7 +28,7 @@ function run(fn: any, ...params: any[]) {
   return undefined
 }
 
-const MicroApp = memo(function MicroApp({
+const BaseMicroApp = memo(function MicroApp({
   name,
   entry,
   sandbox = true,
@@ -111,6 +110,6 @@ const MicroApp = memo(function MicroApp({
   )
 })
 
-export default function MicroAppWrapper(props: MicroAppProps) {
-  return <MicroApp key={props.name} entry={`/${props.name}/`} {...props} />
+export function MicroApp(props: MicroAppProps) {
+  return <BaseMicroApp key={props.name} entry={`/${props.name}/`} {...props} />
 }

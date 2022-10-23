@@ -1,5 +1,4 @@
-import { Lazy } from '@/components/Lazy'
-import MicroApp from '@/components/MicroApp'
+import { Lazy, MicroApp } from '@pansy/micro-shared'
 
 export const useRoutesConfig = () => {
   const routesConfig: any[] = [
