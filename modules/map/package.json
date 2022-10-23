@@ -1,8 +1,7 @@
 {
-  "name": "@micro/launcher",
+  "name": "@micro/map",
   "private": true,
-  "version": "1.0.0",
-  "description": "基座项目",
+  "description": "地图示例",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,27 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lins-material/components": "1.18.3",
-    "@lins-material/login": "1.14.5",
-    "@pansy/react-amap": "2.15.1",
     "@pansy/micro-shared": "1.0.0",
-    "@pansy/react-hooks": "0.12.2",
-    "@sensoro-design/icons": "1.50.0",
-    "@sensoro-design/styles": "1.8.0",
+    "@pansy/react-amap": "2.15.1",
     "@douyinfe/semi-ui": "2.21.2",
-    "antd": "4.23.2",
-    "lodash": "4.17.21",
-    "qiankun": "^2.8.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "6.3.0",
     "regenerator-runtime": "^0.13.10",
-    "valtio": "^1.7.4"
+    "vite-plugin-qiankun": "^1.0.15"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.186",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
     "less": "^4.1.3",
     "typescript": "^4.8.4",
     "vite": "^3.1.8",

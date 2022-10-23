@@ -3,7 +3,7 @@ import { getViteConfig } from 'vite-micro-utils'
 
 const sharedConfig = getViteConfig({
   root: __dirname,
-  moduleName: 'video-monitor',
+  moduleName: 'map',
 })
 
 // https://vitejs.dev/config/
@@ -11,7 +11,7 @@ export default defineConfig(
   mergeConfig(sharedConfig, {
     server: {
       host: true,
-      port: 8702,
+      port: 8701,
     },
   })
 )

@@ -11,6 +11,19 @@ export const useRoutesConfig = () => {
       element: <Lazy entry={() => import('@/pages/home')} />,
     },
     {
+      title: '地图模块',
+      path: 'map',
+      element: (
+        <MicroApp
+          name="map"
+          sandbox={{
+            experimentalStyleIsolation: true,
+          }}
+          props={{}}
+        />
+      ),
+    },
+    {
       title: '实时视频',
       path: 'video-monitor',
       element: (

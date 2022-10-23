@@ -12,7 +12,8 @@ export default defineConfig(
       host: true,
       port: 8700,
       proxy: {
-        '/video-monitor': 'http://localhost:8701',
+        '/map': 'http://localhost:8701',
+        '/video-monitor': 'http://localhost:8702',
       },
     },
   })
