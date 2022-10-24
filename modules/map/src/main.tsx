@@ -11,42 +11,40 @@ import type { Root } from 'react-dom/client'
 const appName = 'map'
 let root: Root;
 
-export default function start(props: any = {}) {
+function render(props: any = {}) {
   const { container } = props
 
-  root = root || createRoot(container
+  root = createRoot(container
     ? container.querySelector(`#${appName}-root`)
-    : document.querySelector(`#${appName}-root`)
+    : document.getElementById(`#${appName}-root`)
   )
 
-  root.render(
-    <App />
-  )
+  root.render(<App />)
 }
 
 function applyProps(props: any) {}
 
 renderWithQiankun({
+  mount(props: any) {
+    console.log(`[${appName}] mount`)
+    applyProps(props)
+    render(props)
+  },
   bootstrap() {
     console.log(`[${appName}] bootstrap`)
   },
-  mount(props: any) {
-    // console.log(`[${appName}] mount`, props)
-    applyProps(props)
-    start(props)
-  },
   update(props: any) {
-    // console.log(`[${appName}] update`, props)
+    console.log(`[${appName}] update`)
     applyProps(props?.props ?? props)
   },
-  unmount(props: any) {
+  unmount() {
     console.log(`[${appName}] unmount`)
     root?.unmount();
   },
 })
 
 if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-  start()
+  render()
 }
 
 if (process.env.NODE_ENV === 'development') {
