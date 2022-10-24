@@ -1,50 +1,50 @@
 import 'regenerator-runtime/runtime.js';
 import { createRoot } from 'react-dom/client';
-import { unmountComponentAtNode } from 'react-dom';
-import { renderWithQiankun } from 'vite-plugin-qiankun/dist/helper'
+import {
+  renderWithQiankun,
+  qiankunWindow,
+} from 'vite-plugin-qiankun/dist/helper'
 import { App } from './App'
 
-const appName = 'video-monitor'
+import type { Root } from 'react-dom/client'
 
-export default function start(props: any = {}) {
+const appName = 'video-monitor'
+let root: Root;
+
+function render(props: any = {}) {
   const { container } = props
 
-  createRoot(container
+  root = createRoot(container
     ? container.querySelector(`#${appName}-root`)
-    : document.querySelector(`#${appName}-root`)
-  ).render(
-    <App />
+    : document.getElementById(`#${appName}-root`)
   )
+
+  root.render(<App />)
 }
 
 function applyProps(props: any) {}
 
 renderWithQiankun({
+  mount(props: any) {
+    console.log(`[${appName}] mount`)
+    applyProps(props)
+    render(props)
+  },
   bootstrap() {
     console.log(`[${appName}] bootstrap`)
   },
-  mount(props: any) {
-    console.log(`[${appName}] mount`, props)
-    applyProps(props)
-    start(props)
-  },
   update(props: any) {
-    console.log(`[${appName}] update`, props)
+    console.log(`[${appName}] update`)
     applyProps(props?.props ?? props)
   },
-  unmount(props: any) {
+  unmount() {
     console.log(`[${appName}] unmount`)
-    const { container } = props
-    unmountComponentAtNode(
-      container
-        ? container.querySelector(`#${appName}-root`)
-        : document.querySelector(`#${appName}-root`)
-    )
+    root?.unmount();
   },
 })
 
-if (!window.__POWERED_BY_QIANKUN__) {
-  start()
+if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
+  render()
 }
 
 if (process.env.NODE_ENV === 'development') {
