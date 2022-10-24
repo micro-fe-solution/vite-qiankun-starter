@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 import { loadMicroApp, initGlobalState } from 'qiankun'
 import { useState, useRef, useEffect, memo, lazy } from 'react'
 
-import type { FrameworkConfiguration, MicroApp as QMicroApp } from 'qiankun'
+import type { FrameworkConfiguration, MicroApp as MicroAppType } from 'qiankun'
 
 interface MicroAppProps extends FrameworkConfiguration {
   /** 微应用的名称 */
@@ -37,7 +37,7 @@ const BaseMicroApp = memo(function MicroApp({
   const location = useLocation()
   const [ready, setReady] = useState(false)
 
-  const microApp = useRef<QMicroApp>()
+  const microApp = useRef<MicroAppType>()
   const container = useRef<HTMLDivElement>(null)
 
   useEffect(
@@ -105,7 +105,7 @@ const BaseMicroApp = memo(function MicroApp({
   return (
     <>
       <div className="micro-wrapper" ref={container} />
-      {/* {!ready && <Lazy />} */}
+      {!ready && <Lazy />}
     </>
   )
 })

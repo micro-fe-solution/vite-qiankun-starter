@@ -14,15 +14,15 @@ const initialPluginsConfig: Record<Frame, UserConfig['plugins']> = {
     react(),
     vitePluginImp({
       libList: [
-        {
-          libName: 'antd',
-          style: (name) => `antd/es/${name}/style/css`,
-        },
         // {
-        //   libName: '@ant-design/icons',
-        //   libDirectory: '',
-        //   camel2DashComponentName: false,
+        //   libName: 'antd',
+        //   style: (name) => `antd/es/${name}/style/css`,
         // },
+        {
+          libName: '@ant-design/icons',
+          libDirectory: '',
+          camel2DashComponentName: false,
+        },
       ],
     }),
   ]
@@ -73,8 +73,15 @@ export const getViteConfig = ({
   }
 
   const microViteConfig = mergeConfig(sharedViteConfig, {
-    base: moduleName ?`/${moduleName}/` : undefined,
-    plugins: [qiankun(moduleName, {})],
+    base: moduleName ?`/${moduleName}/` : `/`,
+    plugins: [qiankun(moduleName, {
+      useDevMode: true
+    })],
+    build: {
+      rollupOptions: {
+        external: ['@/hmr.fix'],
+      },
+    },
   })
 
   return microViteConfig

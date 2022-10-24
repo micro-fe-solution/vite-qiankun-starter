@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { Layout } from '@douyinfe/semi-ui'
+import { Layout } from 'antd'
 
 const { Header, Footer, Content } = Layout
 

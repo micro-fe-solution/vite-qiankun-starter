@@ -17,10 +17,7 @@ export default function start(props: any = {}) {
   )
 }
 
-function applyProps(props: any) {
-  // useAccount.data?.setAccount(props?.account)
-  // useAppConfig?.data?.setLocale(props?.locale)
-}
+function applyProps(props: any) {}
 
 renderWithQiankun({
   bootstrap() {
