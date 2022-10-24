@@ -1,5 +1,5 @@
 import { proxy, useSnapshot } from 'valtio';
-import { Button } from '@douyinfe/semi-ui';
+import { Button } from 'antd';
 
 const store = proxy({
   count: 0,

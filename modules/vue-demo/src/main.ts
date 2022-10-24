@@ -5,9 +5,6 @@ import App from './App.vue'
 
 const appName = 'vue'
 
-// @ts-ignore
-window.__POWERED_BY_QIANKUN__ = qiankunWindow.__POWERED_BY_QIANKUN__
-
 let app: any
 async function start(props: any = {}) {
   const { container } = props
@@ -40,7 +37,6 @@ renderWithQiankun({
   },
 })
 
-// @ts-ignore
-if (!window.__POWERED_BY_QIANKUN__) {
+if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
   start()
 }

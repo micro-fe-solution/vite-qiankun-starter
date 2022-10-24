@@ -17,7 +17,6 @@
     "@pansy/react-hooks": "0.12.2",
     "@sensoro-design/icons": "1.50.0",
     "@sensoro-design/styles": "1.8.0",
-    "@douyinfe/semi-ui": "2.21.2",
     "antd": "4.23.2",
     "lodash": "4.17.21",
     "qiankun": "^2.8.3",

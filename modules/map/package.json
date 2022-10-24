@@ -12,7 +12,6 @@
   "dependencies": {
     "@pansy/micro-shared": "1.0.0",
     "@pansy/react-amap": "2.15.1",
-    "@douyinfe/semi-ui": "2.21.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6.3.0",
