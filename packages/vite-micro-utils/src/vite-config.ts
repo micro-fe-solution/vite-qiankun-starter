@@ -74,9 +74,7 @@ export const getViteConfig = ({
 
   const microViteConfig = mergeConfig(sharedViteConfig, {
     base: moduleName ?`/${moduleName}/` : `/`,
-    plugins: [qiankun(moduleName, {
-      useDevMode: true
-    })],
+    plugins: [qiankun(moduleName, {})],
     build: {
       rollupOptions: {
         external: ['@/hmr.fix'],

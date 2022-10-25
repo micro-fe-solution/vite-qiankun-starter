@@ -23,7 +23,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.3.0",
-    "regenerator-runtime": "^0.13.10",
     "valtio": "^1.7.4"
   },
   "devDependencies": {
