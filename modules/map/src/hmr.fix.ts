@@ -1,4 +1,5 @@
 // @ts-nocheck
+// https://github.com/vitejs/vite/blob/main/packages/plugin-react/src/fast-refresh.ts#L32-L36
 import RefreshRuntime from '/map/@react-refresh'
 RefreshRuntime.injectIntoGlobalHook(window)
 window.$RefreshReg$ = () => {}
