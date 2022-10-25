@@ -16,7 +16,7 @@ function render(props: any = {}) {
 
   root = createRoot(container
     ? container.querySelector(`#${appName}-root`)
-    : document.getElementById(`#${appName}-root`)
+    : document.querySelector(`#${appName}-root`)
   )
 
   root.render(<App />)
