@@ -41,7 +41,7 @@ export const getViteConfig = ({
 
   const initialPlugins = initialPluginsConfig[frame];
 
-  const sharedViteConfig = {
+  const sharedViteConfig: UserConfig = {
     root,
     server: serverConfig,
     preview: serverConfig,
@@ -66,6 +66,12 @@ export const getViteConfig = ({
         },
       },
     },
+  }
+
+  if (frame === 'react') {
+    sharedViteConfig.optimizeDeps = {
+      include: ['react/jsx-runtime'],
+    }
   }
 
   if (!micro) {

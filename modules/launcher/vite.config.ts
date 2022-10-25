@@ -8,6 +8,9 @@ const sharedConfig = getViteConfig({
 // https://vitejs.dev/config/
 export default defineConfig(
   mergeConfig(sharedConfig, {
+    optimizeDeps: {
+      include: ['react/jsx-runtime'],
+    },
     server: {
       host: true,
       port: 8700,
