@@ -1,6 +1,6 @@
 {
   "name": "vite-micro-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vite 微前端工具",
   "main": "./lib/index.js",
   "module": "./es/index.js",
