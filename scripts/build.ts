@@ -26,5 +26,7 @@ import { PATHS } from './.internal/constants';
     }
   }
 
+  await fsExtra.copy(path.join(root, `/dist/index.html`), path.join(root, `/dist/404.html`))
+
   logger.event('done');
 })();
