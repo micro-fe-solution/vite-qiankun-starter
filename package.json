@@ -2,13 +2,16 @@
   "scripts": {
     "clean": "rimraf ./**/node_modules",
     "start": "pnpm run --parallel start",
+    "build:all": "redbud run ./scripts/build.ts",
     "kill-dev": "kill-port --port 8700,8701"
   },
   "devDependencies": {
+    "@umijs/utils": "4.0.26",
     "@types/node": "^18.11.3",
     "kill-port": "^2.0.1",
     "redbud": "^1.2.5",
     "rimraf": "^3.0.2",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "zx": "^7.1.1"
   }
 }
