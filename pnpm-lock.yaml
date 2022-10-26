@@ -11,6 +11,7 @@ importers:
       rimraf: ^3.0.2
       tsx: ^3.11.0
       typescript: ^4.8.4
+      vite: ^2.9.15
       zx: ^7.1.1
     devDependencies:
       '@types/node': 18.11.6
@@ -20,6 +21,7 @@ importers:
       rimraf: 3.0.2
       tsx: 3.11.0
       typescript: 4.8.4
+      vite: 2.9.15
       zx: 7.1.1
 
   modules/launcher:
