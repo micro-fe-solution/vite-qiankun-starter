@@ -8,7 +8,7 @@ import { PATHS } from './.internal/constants';
   const pkgs = await fs.readdir(PATHS.Modules);
 
   logger.event('build pkgs');
-  await $`pnpm run --parallel build`;
+  await $`pnpm run -r build`;
 
   logger.event('remove dist dir');
 

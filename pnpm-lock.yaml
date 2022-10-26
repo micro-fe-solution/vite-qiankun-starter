@@ -22,15 +22,15 @@ importers:
 
   modules/launcher:
     specifiers:
-      '@lins-material/components': 1.18.3
-      '@lins-material/login': 1.14.5
+      '@lins-material/components': 1.18.8
+      '@lins-material/login': 1.14.6
       '@pansy/micro-shared': 1.0.0
       '@pansy/react-hooks': 0.12.2
       '@sensoro-design/icons': 1.50.0
-      '@sensoro-design/styles': 1.8.0
+      '@sensoro-design/styles': 1.12.0
       '@types/lodash': ^4.14.186
-      '@types/react': ^18.0.21
-      '@types/react-dom': ^18.0.6
+      '@types/react': ^18.0.23
+      '@types/react-dom': ^18.0.7
       antd: 4.23.2
       less: ^4.1.3
       lodash: 4.17.21
@@ -41,14 +41,14 @@ importers:
       typescript: ^4.8.4
       valtio: ^1.7.4
       vite: ^2.9.15
-      vite-micro-utils: 1.0.0
+      vite-micro-utils: ^1.0.1
     dependencies:
-      '@lins-material/components': 1.18.3_elp4rueuph7qjxnnvfzlkecbcu
-      '@lins-material/login': 1.14.5_react@18.2.0
+      '@lins-material/components': 1.18.8_elp4rueuph7qjxnnvfzlkecbcu
+      '@lins-material/login': 1.14.6_react@18.2.0
       '@pansy/micro-shared': link:../../packages/micro-shared
       '@pansy/react-hooks': 0.12.2_react@18.2.0
       '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
-      '@sensoro-design/styles': 1.8.0
+      '@sensoro-design/styles': 1.12.0
       antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
       qiankun: 2.8.3
@@ -58,8 +58,8 @@ importers:
       valtio: 1.7.4_react@18.2.0+vite@2.9.15
     devDependencies:
       '@types/lodash': 4.14.186
-      '@types/react': 18.0.21
-      '@types/react-dom': 18.0.6
+      '@types/react': 18.0.23
+      '@types/react-dom': 18.0.7
       less: 4.1.3
       typescript: 4.8.4
       vite: 2.9.15_less@4.1.3
@@ -69,16 +69,15 @@ importers:
     specifiers:
       '@pansy/micro-shared': 1.0.0
       '@pansy/react-amap': 2.15.1
-      '@types/react': ^18.0.21
-      '@types/react-dom': ^18.0.6
-      '@vitejs/plugin-react': ^1.3.2
+      '@types/react': ^18.0.23
+      '@types/react-dom': ^18.0.7
       less: ^4.1.3
       react: ^18.2.0
       react-dom: ^18.2.0
       react-router-dom: 6.3.0
       typescript: ^4.8.4
       vite: ^2.9.15
-      vite-micro-utils: 1.0.0
+      vite-micro-utils: ^1.0.1
       vite-plugin-qiankun: ^1.0.15
     dependencies:
       '@pansy/micro-shared': link:../../packages/micro-shared
@@ -88,9 +87,8 @@ importers:
       react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
       vite-plugin-qiankun: 1.0.15_43do2nblp6dlbagpqygyz2j2ka
     devDependencies:
-      '@types/react': 18.0.21
-      '@types/react-dom': 18.0.6
-      '@vitejs/plugin-react': 1.3.2
+      '@types/react': 18.0.23
+      '@types/react-dom': 18.0.7
       less: 4.1.3
       typescript: 4.8.4
       vite: 2.9.15_less@4.1.3
@@ -98,13 +96,12 @@ importers:
 
   modules/video-monitor:
     specifiers:
-      '@lins-material/components': 1.18.3
+      '@lins-material/components': 1.18.8
       '@pansy/micro-shared': 1.0.0
       '@sensoro-design/icons': 1.50.0
-      '@sensoro-design/styles': 1.8.0
-      '@types/react': ^18.0.21
-      '@types/react-dom': ^18.0.6
-      '@vitejs/plugin-react': ^1.3.2
+      '@sensoro-design/styles': 1.12.0
+      '@types/react': ^18.0.23
+      '@types/react-dom': ^18.0.7
       antd: 4.23.2
       less: ^4.1.3
       react: ^18.2.0
@@ -112,22 +109,21 @@ importers:
       react-router-dom: 6.3.0
       typescript: ^4.8.4
       vite: ^2.9.15
-      vite-micro-utils: 1.0.0
+      vite-micro-utils: ^1.0.1
       vite-plugin-qiankun: ^1.0.15
     dependencies:
-      '@lins-material/components': 1.18.3_elp4rueuph7qjxnnvfzlkecbcu
+      '@lins-material/components': 1.18.8_elp4rueuph7qjxnnvfzlkecbcu
       '@pansy/micro-shared': link:../../packages/micro-shared
       '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
-      '@sensoro-design/styles': 1.8.0
+      '@sensoro-design/styles': 1.12.0
       antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
       vite-plugin-qiankun: 1.0.15_43do2nblp6dlbagpqygyz2j2ka
     devDependencies:
-      '@types/react': 18.0.21
-      '@types/react-dom': 18.0.6
-      '@vitejs/plugin-react': 1.3.2
+      '@types/react': 18.0.23
+      '@types/react-dom': 18.0.7
       less: 4.1.3
       typescript: 4.8.4
       vite: 2.9.15_less@4.1.3
@@ -137,7 +133,7 @@ importers:
     specifiers:
       typescript: ^4.8.4
       vite: ^2.9.15
-      vite-micro-utils: 1.0.0
+      vite-micro-utils: ^1.0.1
       vite-plugin-qiankun: ^1.0.15
       vue: ^3.2.41
       vue-router: ^4.1.5
@@ -334,6 +330,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.19.4
+    dev: false
 
   /@babel/helper-compilation-targets/7.19.3_@babel+core@7.19.3:
     resolution: {integrity: sha512-65ESqLGyGmLvgR0mst5AdW1FkNlj9rQsCKduzEoEPhBCDFGXvz2jW6bXFG6i0/MrV2s7hhXjjb2yAzcPuQlLwg==}
@@ -388,6 +385,7 @@ packages:
   /@babel/helper-plugin-utils/7.19.0:
     resolution: {integrity: sha512-40Ryx7I8mT+0gaNxm8JGTZFUITNqdLAgdg0hXzeVZxVD6nFsdhQvip6v8dqkRHzsz1VFpFAaOCHNn0vKBL7Czw==}
     engines: {node: '>=6.9.0'}
+    dev: false
 
   /@babel/helper-simple-access/7.19.4:
     resolution: {integrity: sha512-f9Xq6WqBFqaDfbCzn2w85hwklswz5qsKlh7f08w4Y9yhJHpnNC0QemtSkK5YyOY8kPGvyiwdzZksGUhnGdaUIg==}
@@ -446,6 +444,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.3
       '@babel/helper-plugin-utils': 7.19.0
+    dev: false
 
   /@babel/plugin-transform-react-jsx-development/7.18.6_@babel+core@7.19.3:
     resolution: {integrity: sha512-SA6HEjwYFKF7WDjWcMcMGUimmw/nhNRDWxr+KaLSCrkD/LMDBvWRmHAYgE1HDeF8KUuI8OAu+RT6EOtKxSW2qA==}
@@ -455,6 +454,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.3
       '@babel/plugin-transform-react-jsx': 7.19.0_@babel+core@7.19.3
+    dev: false
 
   /@babel/plugin-transform-react-jsx-self/7.18.6_@babel+core@7.19.3:
     resolution: {integrity: sha512-A0LQGx4+4Jv7u/tWzoJF7alZwnBDQd6cGLh9P+Ttk4dpiL+J5p7NSNv/9tlEFFJDq3kjxOavWmbm6t0Gk+A3Ig==}
@@ -464,6 +464,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.3
       '@babel/helper-plugin-utils': 7.19.0
+    dev: false
 
   /@babel/plugin-transform-react-jsx-source/7.18.6_@babel+core@7.19.3:
     resolution: {integrity: sha512-utZmlASneDfdaMh0m/WausbjUjEdGrQJz0vFK93d7wD3xf5wBtX219+q6IlCNZeguIcxS2f/CvLZrlLSvSHQXw==}
@@ -473,6 +474,7 @@ packages:
     dependencies:
       '@babel/core': 7.19.3
       '@babel/helper-plugin-utils': 7.19.0
+    dev: false
 
   /@babel/plugin-transform-react-jsx/7.19.0_@babel+core@7.19.3:
     resolution: {integrity: sha512-UVEvX3tXie3Szm3emi1+G63jyw1w5IcMY0FSKM+CRnKRI5Mr1YbCNgsSTwoTwKphQEG9P+QqmuRFneJPZuHNhg==}
@@ -486,6 +488,7 @@ packages:
       '@babel/helper-plugin-utils': 7.19.0
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.19.3
       '@babel/types': 7.19.4
+    dev: false
 
   /@babel/runtime/7.18.9:
     resolution: {integrity: sha512-lkqXDcvlFT5rvEjiu6+QYO+1GXrEHRo2LOtS7E4GtX5ESIZOgepqsZBVIj6Pv+a6zqsya9VCgiK1KAK4BvJDAw==}
@@ -757,8 +760,8 @@ packages:
       d3-path: 3.0.1
     dev: false
 
-  /@lins-material/components/1.18.3_elp4rueuph7qjxnnvfzlkecbcu:
-    resolution: {integrity: sha512-cohktN8ETq83fwxOVExKptFp2kix1cyf8vCs5JbBNjgm0m4VdK30lMTYNyBwIJ8LirVxIvUW00QVpWMn2ht8pA==}
+  /@lins-material/components/1.18.8_elp4rueuph7qjxnnvfzlkecbcu:
+    resolution: {integrity: sha512-hnb+NjeyyaOlcEDSle7X8X1EZRA0zHNZrq+7Sn6mc4b5j/kMUhM3JZ+e7lLn/nrYUi9Xfr9j/UyLtXCKAkpzAg==}
     dependencies:
       '@babel/runtime': 7.19.4
       '@lins-material/area-selector': 1.1.3
@@ -769,22 +772,22 @@ packages:
       '@lins-material/ellipsis': 1.3.0
       '@lins-material/empty': 1.2.2_biqbaboplfbrettd7655fr4n2y
       '@lins-material/error-boundary': 1.1.0
-      '@lins-material/image': 1.5.5_biqbaboplfbrettd7655fr4n2y
+      '@lins-material/image': 1.6.0_biqbaboplfbrettd7655fr4n2y
       '@lins-material/live': 1.4.4_biqbaboplfbrettd7655fr4n2y
       '@lins-material/no-field': 1.3.0
       '@lins-material/number-roller': 1.3.2
-      '@lins-material/operation': 0.13.2_biqbaboplfbrettd7655fr4n2y
+      '@lins-material/operation': 0.14.0_biqbaboplfbrettd7655fr4n2y
       '@lins-material/page-loading': 1.1.15
       '@lins-material/permission-tree-select': 1.3.5_biqbaboplfbrettd7655fr4n2y
       '@lins-material/plate': 1.2.15
       '@lins-material/player': 1.7.4_biqbaboplfbrettd7655fr4n2y
       '@lins-material/preview-image': 1.4.2_biqbaboplfbrettd7655fr4n2y
-      '@lins-material/pro-card': 1.5.0_elp4rueuph7qjxnnvfzlkecbcu
+      '@lins-material/pro-card': 1.6.0_elp4rueuph7qjxnnvfzlkecbcu
       '@lins-material/qrcode-poster': 1.4.1
-      '@lins-material/scrollable-bar': 1.3.2_biqbaboplfbrettd7655fr4n2y
+      '@lins-material/scrollable-bar': 1.3.3_biqbaboplfbrettd7655fr4n2y
       '@lins-material/signal': 1.3.6
-      '@lins-material/table': 1.6.2_biqbaboplfbrettd7655fr4n2y
-      '@lins-material/tag-list': 1.5.2
+      '@lins-material/table': 1.7.1_biqbaboplfbrettd7655fr4n2y
+      '@lins-material/tag-list': 1.6.0
       '@lins-material/transfer': 1.9.2_biqbaboplfbrettd7655fr4n2y
       '@lins-material/tree': 1.6.3_biqbaboplfbrettd7655fr4n2y
       '@lins-material/upload-image': 1.3.0
@@ -846,8 +849,8 @@ packages:
     resolution: {integrity: sha512-KTxqDEVhS89R+Ia7I4fVQ76Kw97I/8dmomVO3ar55GZKtXMbeLYDkvremy39JfpWvqUCUFQDk87bPT9OJzhHEw==}
     dev: false
 
-  /@lins-material/image/1.5.5_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-mHljkw3BBhMDvsSORxabBD0H4T9YOssZ+3ne/YlctW56/lQeV4eUkPEMmacvsMmPNC+iFcypdDl7gFAY/tt8pg==}
+  /@lins-material/image/1.6.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-VFiVC/62j52iXeyB/5jzZvoOHTQtDM2oqSZOuEI32+C8BfWGcnYShu/Bc/vsFGo2of5FGEJf7wpArksXiIBvJw==}
     dependencies:
       '@lins-material/watermark': 1.1.4_biqbaboplfbrettd7655fr4n2y
       '@pansy/react-hooks': 0.12.2_react@18.2.0
@@ -874,8 +877,8 @@ packages:
       - react-dom
     dev: false
 
-  /@lins-material/login/1.14.5_react@18.2.0:
-    resolution: {integrity: sha512-X8bbWN9rf0YUtvJr/nSbaohGjUIcMZP8pBKSKg9KwDjlacI5NA5V1+t24Xd7QNubRXYVI1kSt+NvkVVS56/9fA==}
+  /@lins-material/login/1.14.6_react@18.2.0:
+    resolution: {integrity: sha512-K3PKXf99ScKQYyK6RStznm7JM5JBYFB/sTT6Y3hkU94aUlzyxzf9TJi1dPd2KrJMjNDNmohBvbgTlYP+oV/+0Q==}
     peerDependencies:
       lins-core: ^1.10.0
     dependencies:
@@ -905,8 +908,8 @@ packages:
       '@pansy/shared': 1.5.0
     dev: false
 
-  /@lins-material/operation/0.13.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-QuiFAYCzX6t9BDhuytbAM5+f1Ggrjo6tRBk1Pm1kRYjSh74XbuA8G9OCNx/sEBkE10N00Km4PovFa4jis3RdcQ==}
+  /@lins-material/operation/0.14.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-jf1L6Kjg96iHL/DQ/XcXfvilM4sYqEJKWmZ9FTCMikUOM4UupsNuPcgw8O94rTxyJ7fYW0zdX7Js24G19MHYEw==}
     dependencies:
       '@babel/runtime': 7.19.4
       '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
@@ -975,8 +978,8 @@ packages:
       '@pansy/classnames': 1.0.1
     dev: false
 
-  /@lins-material/pro-card/1.5.0_elp4rueuph7qjxnnvfzlkecbcu:
-    resolution: {integrity: sha512-Abn8rjPYn8JzIpMeoL97w6qkoDEoYLaRawz3g59IBCIkjUX7wYd61FOAkqcFsZhyxdSRhspu8Ca9BXoj8M9VaA==}
+  /@lins-material/pro-card/1.6.0_elp4rueuph7qjxnnvfzlkecbcu:
+    resolution: {integrity: sha512-Z67Mw/fVCikDniL+cyAuz9GNBPvGLADC+VlR/UKpuyKhN5MmBmw9Z3Re4JGLVL+Lj91HNmqv+7hg1BCbtZY3zA==}
     dependencies:
       '@ant-design/pro-utils': 2.2.7_elp4rueuph7qjxnnvfzlkecbcu
       '@babel/runtime': 7.19.4
@@ -993,8 +996,8 @@ packages:
     resolution: {integrity: sha512-99+SKmgHIzAWo0vwnSJM7sABiPOdukswjLkFgk1K8gjKGl3kyPDIM1BR1lJTJ3x0ortw4NNjWNCCeTzbZ/ncRw==}
     dev: false
 
-  /@lins-material/scrollable-bar/1.3.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-G9VM2MFLv7tO2mQZqoqfCeJI935i6LkzH7b+NmeDGf2OxRIeLSKeRHge5KiY13EPppOgB0TcDyv2UY4Hk3ISsQ==}
+  /@lins-material/scrollable-bar/1.3.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-hkvtB9ANNrS2y6m9KjfKHQhp1DWUMHWkhuVDoI3kHYb19SBchRg6ApicFtYfT1z0CinnicwCHfeWqghdnEYLHQ==}
     dependencies:
       '@pansy/shared': 1.5.0
       '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
@@ -1012,12 +1015,12 @@ packages:
       d3-path: 3.0.1
     dev: false
 
-  /@lins-material/table/1.6.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-jl7Kf/OXHcyQXkjM1Q16z9g1sO3YVl/kVbcFbWVeOePdguwhCP/Kl/xyoGV3yZtX0MBhtzqepkN6ZployM0Eqw==}
+  /@lins-material/table/1.7.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-jDnLoIhLE3BOyL+QbMto8ABw5ss3f5IB824KrhGha4gIKGcFm2biphLPKAKZm9UAQDipVPhyI9f7Z6s7SQibVg==}
     dependencies:
       '@babel/runtime': 7.19.4
       '@lins-material/no-field': 1.3.0
-      '@lins-material/operation': 0.13.2_biqbaboplfbrettd7655fr4n2y
+      '@lins-material/operation': 0.14.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
       '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
@@ -1026,8 +1029,8 @@ packages:
       - react-dom
     dev: false
 
-  /@lins-material/tag-list/1.5.2:
-    resolution: {integrity: sha512-SLwUCQ9+pxr2evKMi/TH+RiEs97j6XoHT6Lrrl7SrtGjAEpBn2i8xpAeVHVIwWpeRLULzxXp5BWVlvnih8HZ+g==}
+  /@lins-material/tag-list/1.6.0:
+    resolution: {integrity: sha512-hunLTMjYsZw7BOz1Vbeh0/6dvjT1P5P65ejm5+QHGU6x7E4YUBPRD9o39O4WfdlqWcRUXAn0HdXQvaWUmF07PQ==}
     dependencies:
       '@pansy/shared': 1.5.0
     dev: false
@@ -1881,6 +1884,7 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: false
 
   /@rushstack/node-core-library/3.51.1:
     resolution: {integrity: sha512-xLoUztvGpaT5CphDexDPt2WbBx8D68VS5tYOkwfr98p90y0f/wepgXlTA/q5MUeZGGucASiXKp5ysdD+GPYf9A==}
@@ -1930,8 +1934,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@sensoro-design/styles/1.8.0:
-    resolution: {integrity: sha512-vKcZBJFn/hjR8c2yVJx6YuiF37cK47OBOzEbeZzvKg72OXA8WRSPdpk+IhwOt1arR1hX13nENiaitB9OsMyn5Q==}
+  /@sensoro-design/styles/1.12.0:
+    resolution: {integrity: sha512-WPfPiuAgOyWey99VR1/sVu2gAv21T3BhmxGNncVcXMoqIB8Fk66Wh7Mk1MDWKkk4768GmZ17cZD6ANEONzODtw==}
     dev: false
 
   /@svgr/babel-plugin-add-jsx-attribute/6.5.0_@babel+core@7.19.3:
@@ -2130,8 +2134,22 @@ packages:
       '@types/react': 18.0.21
     dev: true
 
+  /@types/react-dom/18.0.7:
+    resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
+    dependencies:
+      '@types/react': 18.0.23
+    dev: true
+
   /@types/react/18.0.21:
     resolution: {integrity: sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/react/18.0.23:
+    resolution: {integrity: sha512-R1wTULtCiJkudAN2DJGoYYySbGtOdzZyUWAACYinKdiQC8auxso4kLDUhQ7AJ2kh3F6A6z4v69U6tNY39hihVQ==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -2280,6 +2298,7 @@ packages:
       resolve: 1.22.1
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   /@vitejs/plugin-vue/2.3.4_vite@2.9.15:
     resolution: {integrity: sha512-IfFNbtkbIm36O9KB8QodlwwYvTEsJb4Lll4c2IwB3VHc2gie2mSPtSzL0eYay7X2jd/2WX02FjSGTWR6OPr/zg==}
@@ -6170,6 +6189,7 @@ packages:
   /react-refresh/0.13.0:
     resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
     engines: {node: '>=0.10.0'}
+    dev: false
 
   /react-refresh/0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
