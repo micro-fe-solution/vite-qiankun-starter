@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { loadMicroApp, initGlobalState } from 'qiankun'
-import { useState, useRef, useEffect, memo, lazy } from 'react'
+import { useState, useRef, useEffect, memo } from 'react'
 
 import type { FrameworkConfiguration, MicroApp as MicroAppType } from 'qiankun'
 
@@ -16,7 +16,6 @@ interface MicroAppProps extends FrameworkConfiguration {
 
 const microAppEntryCache: any = {}
 const actions = initGlobalState({ hash: '' })
-const Lazy = lazy(() => new Promise(() => null))
 
 let prevAppUnmountPromise: Promise<unknown> = Promise.resolve()
 
@@ -105,7 +104,6 @@ const BaseMicroApp = memo(function MicroApp({
   return (
     <>
       <div className="micro-wrapper" ref={container} />
-      {!ready && <Lazy />}
     </>
   )
 })
