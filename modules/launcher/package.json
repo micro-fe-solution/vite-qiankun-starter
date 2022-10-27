@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "4.7.0",
+    "@ant-design/pro-layout": "7.1.14",
     "@lins-material/components": "1.18.8",
     "@lins-material/login": "1.14.6",
     "@pansy/micro-shared": "workspace:*",
