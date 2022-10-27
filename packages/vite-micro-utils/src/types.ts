@@ -1,3 +1,6 @@
+import type { PluginVisualizerOptions } from 'rollup-plugin-visualizer'
+import type { Externals } from 'vite-plugin-externals/dist/types'
+
 export type Frame = 'react' | 'vue';
 
 export interface GetViteConfigOptions {
@@ -17,4 +20,7 @@ export interface GetViteConfigOptions {
    * @default process.cwd()
    */
   root?: string;
+  html?: Record<string, any>;
+  externals?: Externals;
+  visualizer?: boolean | PluginVisualizerOptions;
 }

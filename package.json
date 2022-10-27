@@ -6,6 +6,7 @@
     "kill-dev": "kill-port --port 8700,8701"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.186",
     "@types/node": "^18.11.6",
     "@umijs/utils": "4.0.26",
     "kill-port": "^2.0.1",

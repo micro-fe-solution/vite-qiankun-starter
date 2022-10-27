@@ -1,11 +1,16 @@
 import { mergeConfig } from 'vite'
 import path from 'path'
+import { isBoolean } from 'lodash'
 import vue from '@vitejs/plugin-vue'
+import { createHtmlPlugin } from 'vite-plugin-html'
+import { visualizer as viteVisualizerPlugin } from 'rollup-plugin-visualizer'
+import { viteExternalsPlugin } from 'vite-plugin-externals'
 import react from '@vitejs/plugin-react'
 import qiankun from 'vite-plugin-qiankun'
 import vitePluginImp from 'vite-plugin-imp'
 
 import type { UserConfig } from 'vite'
+import type { PluginVisualizerOptions } from 'rollup-plugin-visualizer'
 import type { GetViteConfigOptions, Frame } from './types';
 
 const initialPluginsConfig: Record<Frame, UserConfig['plugins']> = {
@@ -33,13 +38,23 @@ export const getViteConfig = ({
   frame = 'react',
   micro = true,
   moduleName = '',
+  externals = {},
+  visualizer = false,
+  html,
 }: GetViteConfigOptions = {}) => {
   const serverConfig = {
     strictPort: true,
     proxy: {},
   }
 
-  const initialPlugins = initialPluginsConfig[frame];
+  const visualizerOpts: PluginVisualizerOptions = {
+    open: true,
+    gzipSize: true,
+    brotliSize: true,
+    ...((isBoolean(visualizer)) ? {} : visualizer)
+  };
+
+  const initialPlugins = initialPluginsConfig[frame] ?? [];
 
   const sharedViteConfig: UserConfig = {
     root,
@@ -58,7 +73,12 @@ export const getViteConfig = ({
         },
       ],
     },
-    plugins: initialPlugins,
+    plugins: [
+      ...initialPlugins,
+      viteExternalsPlugin(externals),
+      html && createHtmlPlugin(html),
+      visualizer && viteVisualizerPlugin(visualizerOpts),
+    ].filter(Boolean),
     css: {
       preprocessorOptions: {
         less: {
