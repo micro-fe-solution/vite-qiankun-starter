@@ -16,5 +16,6 @@
     "vite": "^2.9.15",
     "typescript": "^4.8.4",
     "zx": "^7.1.1"
-  }
+  },
+  "packageManager": "pnpm@7.14.0"
 }
