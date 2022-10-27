@@ -1,4 +1,5 @@
 import { Lazy, MicroApp } from '@pansy/micro-shared'
+import { Navigate } from 'react-router-dom'
 import BasicLayout from '@/layouts/BasicLayout'
 
 export const useRoutesConfig = () => {
@@ -51,6 +52,10 @@ export const useRoutesConfig = () => {
     {
       path: 'login',
       element: <Lazy entry={() => import('@/pages/login')} />,
+    },
+    {
+      path: '*',
+      element: <Navigate to="/home" replace={true} />
     },
   ];
 

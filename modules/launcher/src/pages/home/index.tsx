@@ -1,4 +1,5 @@
 import { proxy, useSnapshot } from 'valtio';
+import { useNavigate } from 'react-router-dom'
 import { Button } from 'antd';
 
 const store = proxy({
@@ -12,11 +13,17 @@ const store = proxy({
 });
 
 export default function Home() {
+  const navigaten = useNavigate();
   const snap = useSnapshot(store);
+
+  const handleClock = () => {
+    snap.actions.add();
+    navigaten('/micro/video-monitor')
+  }
 
   return (
     <div style={{ height: '100vh' }}>
-      <Button onClick={snap.actions.add}>点击{snap.count}</Button>
+      <Button onClick={handleClock}>点击{snap.count}</Button>
     </div>
   )
 }
