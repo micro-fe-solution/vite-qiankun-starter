@@ -11,7 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@lins-material/components": "1.18.8",
     "@sensoro-design/icons": "1.51.0",
     "@sensoro-design/styles": "1.12.1",
     "@pansy/micro-shared": "workspace:*",
