@@ -13,25 +13,13 @@ import type { UserConfig } from 'vite'
 import type { PluginVisualizerOptions } from 'rollup-plugin-visualizer'
 import type { GetViteConfigOptions, Frame } from './types';
 
-const initialPluginsConfig: Record<Frame, UserConfig['plugins']> = {
-  vue: [vue()],
-  react: [
-    react(),
-    vitePluginImp({
-      libList: [
-        // {
-        //   libName: 'antd',
-        //   style: (name) => `antd/es/${name}/style/css`,
-        // },
-        {
-          libName: '@ant-design/icons',
-          libDirectory: '',
-          camel2DashComponentName: false,
-        },
-      ],
-    }),
-  ]
-};
+const defaultImpLibList = [
+  {
+    libName: '@ant-design/icons',
+    libDirectory: '',
+    camel2DashComponentName: false,
+  },
+];
 
 export const getViteConfig = ({
   root = process.cwd(),
@@ -39,6 +27,7 @@ export const getViteConfig = ({
   micro = true,
   moduleName = '',
   externals = {},
+  pluginImport = {},
   visualizer = false,
   html,
 }: GetViteConfigOptions = {}) => {
@@ -46,6 +35,20 @@ export const getViteConfig = ({
     strictPort: true,
     proxy: {},
   }
+
+  const initialPluginsConfig: Record<Frame, UserConfig['plugins']> = {
+    vue: [vue()],
+    react: [
+      react(),
+      vitePluginImp({
+        ...pluginImport,
+        libList: [
+          ...pluginImport.libList,
+          ...defaultImpLibList,
+        ],
+      }),
+    ]
+  };
 
   const visualizerOpts: PluginVisualizerOptions = {
     open: true,

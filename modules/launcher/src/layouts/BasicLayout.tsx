@@ -4,6 +4,8 @@ import { ProLayout } from '@ant-design/pro-layout';
 
 import logo from '@/assets/logo.svg';
 
+import { navigation } from './navigation';
+
 export default function Layout() {
   return (
     <ProLayout
@@ -22,6 +24,7 @@ export default function Layout() {
           </div>
         ),
       }}
+      route={navigation}
       actionsRender={(props) => {
         if (props.isMobile) return [];
 

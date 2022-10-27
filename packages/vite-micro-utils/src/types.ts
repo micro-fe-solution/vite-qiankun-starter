@@ -21,6 +21,7 @@ export interface GetViteConfigOptions {
    */
   root?: string;
   html?: Record<string, any>;
+  pluginImport?: Record<string, any>;
   externals?: Externals;
   visualizer?: boolean | PluginVisualizerOptions;
 }
