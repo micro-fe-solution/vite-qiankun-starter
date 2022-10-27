@@ -30,7 +30,6 @@ importers:
     specifiers:
       '@ant-design/icons': 4.7.0
       '@ant-design/pro-layout': 7.1.14
-      '@lins-material/login': 1.14.6
       '@pansy/micro-shared': workspace:*
       '@pansy/react-hooks': 0.12.2
       '@types/lodash': ^4.14.186
@@ -50,7 +49,6 @@ importers:
     dependencies:
       '@ant-design/icons': 4.7.0_biqbaboplfbrettd7655fr4n2y
       '@ant-design/pro-layout': 7.1.14_6nwhhda7mddhbr67q5guv5qsze
-      '@lins-material/login': 1.14.6_react@18.2.0
       '@pansy/micro-shared': link:../../packages/micro-shared
       '@pansy/react-hooks': 0.12.2_react@18.2.0
       antd: 4.23.6_biqbaboplfbrettd7655fr4n2y
@@ -790,24 +788,6 @@ packages:
     resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
     dev: false
 
-  /@lins-material/login/1.14.6_react@18.2.0:
-    resolution: {integrity: sha512-K3PKXf99ScKQYyK6RStznm7JM5JBYFB/sTT6Y3hkU94aUlzyxzf9TJi1dPd2KrJMjNDNmohBvbgTlYP+oV/+0Q==}
-    peerDependencies:
-      lins-core: ^1.10.0
-    dependencies:
-      '@babel/runtime': 7.19.4
-      '@pansy/react-hooks': 0.12.2_react@18.2.0
-      '@pansy/shared': 1.5.0
-      '@pansy/smart-captcha': 2.0.2_react@18.2.0
-      lodash: 4.17.21
-      qrcode.react: 3.1.0_react@18.2.0
-    transitivePeerDependencies:
-      - bufferutil
-      - react
-      - supports-color
-      - utf-8-validate
-    dev: false
-
   /@microsoft/api-extractor-model/7.23.3:
     resolution: {integrity: sha512-HpsWzG6jrWHrTlIg53kmp/IVQPBHUZc+8dunnr9VXrmDjVBehaXxp9A6jhTQ/bd7W1m5TYfAvwCmseC1+9FCuA==}
     dependencies:
@@ -971,19 +951,6 @@ packages:
     resolution: {integrity: sha512-TTDv30O8VW/KoUCczyJx2ekym9b+AHSvU++pdDCWJt+oAEJ8m5LkEYi4NGbnNXy8jS0hexzvKTFUH4IcTDRhRQ==}
     dependencies:
       lodash: 4.17.21
-    dev: false
-
-  /@pansy/smart-captcha/2.0.2_react@18.2.0:
-    resolution: {integrity: sha512-aj/l6qJnz6vo1PMlfuEXJ05QwvWoTUFvns5ys8UROSxU4AWYmmiu86PG5dM8/HnWEKJn12bMYqPw4ZVL3tQoPg==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      '@pansy/react-hooks': 0.12.2_react@18.2.0
-      react: 18.2.0
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
     dev: false
 
   /@pansy/use-boolean/0.2.5_react@18.2.0:
@@ -5463,14 +5430,6 @@ packages:
       import-html-entry: 1.14.0
       lodash: 4.17.21
       single-spa: 5.9.4
-    dev: false
-
-  /qrcode.react/3.1.0_react@18.2.0:
-    resolution: {integrity: sha512-oyF+Urr3oAMUG/OiOuONL3HXM+53wvuH3mtIWQrYmsXoAq0DkvZp2RYUWFSMFtbdOpuS++9v+WAkzNVkMlNW6Q==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /querystring-es3/0.2.1:
