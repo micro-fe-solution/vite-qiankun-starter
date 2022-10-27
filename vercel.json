@@ -1,0 +1,9 @@
+{
+  "name": "vite-qiankun-started",
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm build:all",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
