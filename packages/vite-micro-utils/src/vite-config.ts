@@ -43,7 +43,7 @@ export const getViteConfig = ({
       vitePluginImp({
         ...pluginImport,
         libList: [
-          ...pluginImport.libList,
+          ...(pluginImport.libList ?? []),
           ...defaultImpLibList,
         ],
       }),
