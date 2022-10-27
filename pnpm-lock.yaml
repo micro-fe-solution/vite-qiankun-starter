@@ -30,10 +30,10 @@ importers:
     specifiers:
       '@lins-material/components': 1.18.8
       '@lins-material/login': 1.14.6
-      '@pansy/micro-shared': 1.0.0
+      '@pansy/micro-shared': workspace:*
       '@pansy/react-hooks': 0.12.2
-      '@sensoro-design/icons': 1.50.0
-      '@sensoro-design/styles': 1.12.0
+      '@sensoro-design/icons': 1.51.0
+      '@sensoro-design/styles': 1.12.1
       '@types/lodash': ^4.14.186
       '@types/react': ^18.0.23
       '@types/react-dom': ^18.0.7
@@ -53,8 +53,8 @@ importers:
       '@lins-material/login': 1.14.6_react@18.2.0
       '@pansy/micro-shared': link:../../packages/micro-shared
       '@pansy/react-hooks': 0.12.2_react@18.2.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
-      '@sensoro-design/styles': 1.12.0
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/styles': 1.12.1
       antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
       qiankun: 2.8.3
@@ -73,7 +73,7 @@ importers:
 
   modules/map:
     specifiers:
-      '@pansy/micro-shared': 1.0.0
+      '@pansy/micro-shared': workspace:*
       '@pansy/react-amap': 2.15.1
       '@types/react': ^18.0.23
       '@types/react-dom': ^18.0.7
@@ -103,9 +103,9 @@ importers:
   modules/video-monitor:
     specifiers:
       '@lins-material/components': 1.18.8
-      '@pansy/micro-shared': 1.0.0
-      '@sensoro-design/icons': 1.50.0
-      '@sensoro-design/styles': 1.12.0
+      '@pansy/micro-shared': workspace:*
+      '@sensoro-design/icons': 1.51.0
+      '@sensoro-design/styles': 1.12.1
       '@types/react': ^18.0.23
       '@types/react-dom': ^18.0.7
       antd: 4.23.2
@@ -120,8 +120,8 @@ importers:
     dependencies:
       '@lins-material/components': 1.18.8_elp4rueuph7qjxnnvfzlkecbcu
       '@pansy/micro-shared': link:../../packages/micro-shared
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
-      '@sensoro-design/styles': 1.12.0
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/styles': 1.12.1
       antd: 4.23.2_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -859,7 +859,7 @@ packages:
     resolution: {integrity: sha512-5qzYk28o4NXIjOCfJCaOQJTpXuKPFxo2av170nyeUmOhk5g3lV86y5fg9IkhX0TYLloUhwEScRvxVwOflHAQxw==}
     dependencies:
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -891,7 +891,7 @@ packages:
       '@pansy/react-aliplayer': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/react-fullscreen': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -933,7 +933,7 @@ packages:
     resolution: {integrity: sha512-jf1L6Kjg96iHL/DQ/XcXfvilM4sYqEJKWmZ9FTCMikUOM4UupsNuPcgw8O94rTxyJ7fYW0zdX7Js24G19MHYEw==}
     dependencies:
       '@babel/runtime': 7.19.4
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
       - react
       - react-dom
@@ -953,7 +953,7 @@ packages:
       '@lins-material/tree': 1.6.3_biqbaboplfbrettd7655fr4n2y
       '@pansy/array-to-tree': 0.3.0
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
       - react
       - react-dom
@@ -972,7 +972,7 @@ packages:
       '@pansy/react-aliplayer': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/react-fullscreen': 1.3.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -984,7 +984,7 @@ packages:
     dependencies:
       '@pansy/react-hooks': 0.12.2_react@18.2.0
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
       - bufferutil
       - react
@@ -1021,7 +1021,7 @@ packages:
     resolution: {integrity: sha512-hkvtB9ANNrS2y6m9KjfKHQhp1DWUMHWkhuVDoI3kHYb19SBchRg6ApicFtYfT1z0CinnicwCHfeWqghdnEYLHQ==}
     dependencies:
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
       lodash-es: 4.17.21
       resize-observer-polyfill: 1.5.1
     transitivePeerDependencies:
@@ -1043,7 +1043,7 @@ packages:
       '@lins-material/no-field': 1.3.0
       '@lins-material/operation': 0.14.0_biqbaboplfbrettd7655fr4n2y
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
     transitivePeerDependencies:
       - react
@@ -1060,7 +1060,7 @@ packages:
     resolution: {integrity: sha512-BgOwCvXEVYIALpoo19IQPR/tzBcW8QfFQsL/R59Du4tHtD3jdELAXFNM1Mpbu9b1lWRXUgarbBC8ZpFMNukCrA==}
     dependencies:
       '@pansy/shared': 1.5.0
-      '@sensoro-design/icons': 1.50.0_biqbaboplfbrettd7655fr4n2y
+      '@sensoro-design/icons': 1.51.0_biqbaboplfbrettd7655fr4n2y
       lodash: 4.17.21
       react-sortable-hoc: 2.0.0_biqbaboplfbrettd7655fr4n2y
     transitivePeerDependencies:
@@ -1933,12 +1933,12 @@ packages:
       string-argv: 0.3.1
     dev: true
 
-  /@sensoro-design/icons-svg/1.52.0:
-    resolution: {integrity: sha512-Xm5y9Grup5wfoMA5NfTnNXVupVKycWRFsha3mE5h1Xq65Pt4A6H6dXYRm1ZqkySiJTFczkiyIFXeE1yMElDKpQ==}
+  /@sensoro-design/icons-svg/1.53.0:
+    resolution: {integrity: sha512-PA993pTBikY/yXXPxLUG+p90Av3/YFEPJMQilsn3Md7G5fUanVWoKfLpZL89XG2BbvfI9SQKv0WY4OsgMffyng==}
     dev: false
 
-  /@sensoro-design/icons/1.50.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-/Eblrj6Ogjbekq4p5i/U4hjiSt+3hC7ImcP3U7n7B/Ege+TbTf9ChcTGDQlVyG4u7pZ/IFvIQorrm7Et6cQBbw==}
+  /@sensoro-design/icons/1.51.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-yheg6ZBiwnhODBcSb0A7TYzsHnwd5+kIRGNInzPIIaocSc3ux3NC23jGNOScyQ463ru6hydrSuEgIh7ztKyzyw==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -1946,14 +1946,14 @@ packages:
       '@ant-design/colors': 6.0.0
       '@babel/runtime': 7.19.4
       '@pansy/classnames': 1.0.1
-      '@sensoro-design/icons-svg': 1.52.0
+      '@sensoro-design/icons-svg': 1.53.0
       rc-util: 5.24.4_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@sensoro-design/styles/1.12.0:
-    resolution: {integrity: sha512-WPfPiuAgOyWey99VR1/sVu2gAv21T3BhmxGNncVcXMoqIB8Fk66Wh7Mk1MDWKkk4768GmZ17cZD6ANEONzODtw==}
+  /@sensoro-design/styles/1.12.1:
+    resolution: {integrity: sha512-8FaJJKfgNE+sPcnQjlC7DzurtmaKqu1BjAJt18fQQjZXHMfcV0kJnYeU2LXg0qcmrihj2SHC4uVxUzpxm01fvQ==}
     dev: false
 
   /@svgr/babel-plugin-add-jsx-attribute/6.5.0_@babel+core@7.19.3:

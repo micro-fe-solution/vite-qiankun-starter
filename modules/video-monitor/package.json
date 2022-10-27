@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@lins-material/components": "1.18.8",
-    "@sensoro-design/icons": "1.50.0",
-    "@sensoro-design/styles": "1.12.0",
-    "@pansy/micro-shared": "1.0.0",
+    "@sensoro-design/icons": "1.51.0",
+    "@sensoro-design/styles": "1.12.1",
+    "@pansy/micro-shared": "workspace:*",
     "antd": "4.23.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
