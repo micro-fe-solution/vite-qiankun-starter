@@ -45,6 +45,19 @@ export const useRoutesConfig = () => {
                 />
               ),
             },
+            {
+              title: 'Vue',
+              path: 'vue',
+              element: (
+                <MicroApp
+                  name="vue"
+                  sandbox={{
+                    experimentalStyleIsolation: true,
+                  }}
+                  props={{}}
+                />
+              ),
+            },
           ]
         },
       ]
