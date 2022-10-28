@@ -3,7 +3,8 @@
     "clean": "rimraf ./**/node_modules",
     "start": "pnpm run --parallel start",
     "build:all": "tsx ./scripts/build.ts",
-    "kill-dev": "kill-port --port 8700,8701"
+    "kill-dev": "kill-port --port 8700,8701",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.186",

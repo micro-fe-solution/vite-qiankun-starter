@@ -14,6 +14,35 @@
 
 1. 路由文件导出具名函数，不要匿名导出，避免使用 `export default () => ...`
 
+## 启动方式
+
+```
+# 安装依赖
+pnpm i
+
+# 编译依赖包
+pnpm build:all
+
+# 启动 dev 命令，默认基座在 8700 端口
+pnpm start
+```
+
+## 常用命令
+
+```
+# 删除所有node_modules
+pnpm clean
+
+# 启动 dev 命令
+pnpm start
+
+# 编译
+pnpm build:all
+
+# 产物预览
+pnpm preview
+```
+
 ## 部署方案
 
 编译后目录如下：
@@ -43,6 +72,22 @@ location / {
 }
 ```
 
+## 问题记录
+
+### `React.lazy` 组件在 `vite` 中无法热更新
+
+资料:
+  1. https://github.com/vitejs/vite/issues/2719
+  2. https://github.com/facebook/react/issues/21181
+
+解决方案
+  1. 路由文件导出具名函数，不要匿名导出，避免使用 `export default () => ...`
+
+### 部署后，子项目报没有导出生命周期
+
+检查子项目命名和目录是否一致
+
 ## 感谢
 
 - [mono-micro-project](https://github.com/CJY0208/mono-micro-project)
+- [vite-plugin-qiankun](https://github.com/tengmaoqing/vite-plugin-qiankun)
