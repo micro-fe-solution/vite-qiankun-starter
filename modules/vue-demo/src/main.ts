@@ -1,14 +1,15 @@
 import { createApp } from 'vue'
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
+import Root from './App.vue'
 
-import App from './App.vue'
+import type { App } from 'vue'
 
 const appName = 'vue'
 
-let app: any
+let app: App;
 async function start(props: any = {}) {
   const { container } = props
-  app = createApp(App)
+  app = createApp(Root)
   app.mount(
     container
       ? container.querySelector(`#${appName}-app`)
