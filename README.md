@@ -70,16 +70,16 @@ location / {
 
 ## 问题记录
 
-### `React.lazy` 组件在 `vite` 中无法热更新
+1. ### `React.lazy` 组件在 `vite` 中无法热更新
 
 资料:
-  1. https://github.com/vitejs/vite/issues/2719
-  2. https://github.com/facebook/react/issues/21181
+  - https://github.com/vitejs/vite/issues/2719
+  - https://github.com/facebook/react/issues/21181
 
 解决方案
-  1. 路由文件导出具名函数，不要匿名导出，避免使用 `export default () => ...`
+  - 路由文件导出具名函数，不要匿名导出，避免使用 `export default () => ...`
 
-### 部署后，子项目报没有导出生命周期
+2. ### 部署后，子项目报没有导出生命周期
 
 检查子项目命名和目录是否一致
 
