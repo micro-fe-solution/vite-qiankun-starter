@@ -1,8 +1,12 @@
+<p align="center">
+  <img width="200" src="https://vite-qiankun-starter.vercel.app/assets/logo.9b6166e5.svg">
+</p>
+
 <h1 align="center">Vite Qiankun Starter</h1>
 
+<div align="center">
 基于Vite、乾坤的微前端解决方案
-
-**注意:**
+</div>
 
 本项目采用 [pnpm](https://pnpm.io/zh) 作为包管理工具
 
