@@ -4,7 +4,7 @@ import { getViteConfig } from 'vite-micro-utils'
 const isPord = process.env.NODE_ENV === 'production';
 const cdns = [
   'https://cdn.staticfile.org/react/18.2.0/umd/react.production.min.js',
-  'https://cdn.staticfile.org/react/18.2.0/umd/react.production.min.js',
+  'https://cdn.staticfile.org/react-dom/18.2.0/umd/react-dom.production.min.js',
 ]
 
 const sharedConfig = getViteConfig({
