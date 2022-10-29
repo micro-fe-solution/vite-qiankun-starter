@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "analyze": "cross-env ANALYZE=1 vite build",
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "typescript": "^4.8.4",
     "vite": "^2.9.15",
+    "cross-env": "^7.0.3",
     "vite-micro-utils": "workspace:*",
     "vite-plugin-qiankun": "^1.0.15",
     "vue-tsc": "^1.0.9"

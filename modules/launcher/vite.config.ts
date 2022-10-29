@@ -1,8 +1,29 @@
 import { defineConfig, mergeConfig } from 'vite'
 import { getViteConfig } from 'vite-micro-utils'
 
+const isPord = process.env.NODE_ENV === 'production';
+const cdns = [
+  'https://cdn.staticfile.org/react/18.2.0/umd/react.production.min.js',
+  'https://cdn.staticfile.org/react/18.2.0/umd/react.production.min.js',
+]
+
 const sharedConfig = getViteConfig({
   root: __dirname,
+  externals: isPord
+    ? {
+      react: 'React',
+      'react-dom': 'ReactDOM',
+    }: {},
+  html: {
+    entry: '/src/main.tsx',
+    template: 'index.html',
+    inject: {
+      data: {
+        injectScript: isPord ? cdns.reduce((prev, cur) => { return prev += `<script src="${cur}"></script>`},'') : undefined
+      },
+    },
+  },
+  visualizer: process.env.ANALYZE === '1',
 })
 
 // https://vitejs.dev/config/

@@ -5,6 +5,7 @@ const sharedConfig = getViteConfig({
   root: __dirname,
   frame: 'vue',
   moduleName: 'vue',
+  visualizer: process.env.ANALYZE === '1',
 })
 
 // https://vitejs.dev/config/
