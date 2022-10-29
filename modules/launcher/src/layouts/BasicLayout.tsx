@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate, } from 'react-router-dom'
 import { GithubFilled, } from '@ant-design/icons';
 import { ProLayout } from '@ant-design/pro-layout';
 
@@ -7,6 +7,8 @@ import logo from '@/assets/logo.svg';
 import { navigation } from './navigation';
 
 export default function Layout() {
+  const navigaten = useNavigate();
+
   return (
     <ProLayout
       title="Vite Qiankun Starter"
@@ -31,6 +33,11 @@ export default function Layout() {
         return [
           <GithubFilled key="GithubFilled" onClick={() => { window.open('https://github.com/micro-fe-solution/vite-qiankun-starter') }} />,
         ]
+      }}
+      menuProps={{
+        onClick: (data) => {
+          data.key && navigaten(data.key);
+        }
       }}
     >
       <Outlet />
