@@ -8,6 +8,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@types/lodash": "^4.14.186",
     "@types/node": "^18.11.7",
     "@umijs/utils": "4.0.28",
@@ -16,6 +18,7 @@
     "husky": "^8.0.1",
     "rimraf": "^3.0.2",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "vite": "^2.9.15",
     "typescript": "^4.8.4",
     "zx": "^7.1.1"

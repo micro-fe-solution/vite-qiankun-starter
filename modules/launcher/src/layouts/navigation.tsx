@@ -9,7 +9,7 @@ export const navigation = {
       icon: <DashboardFilled />,
     },
     {
-      path: '/micro/map',
+      path: '/micro',
       name: '地图示例',
       icon: <CrownFilled />,
       access: 'canAdmin',
