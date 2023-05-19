@@ -32,14 +32,6 @@ export default defineConfig(
     optimizeDeps: {
       include: ['react/jsx-runtime'],
     },
-    pluginImport: {
-      libList: [
-        {
-          libName: 'antd',
-          style: (name) => `antd/es/${name}/style/css`,
-        },
-      ]
-    },
     server: {
       host: true,
       port: 8700,

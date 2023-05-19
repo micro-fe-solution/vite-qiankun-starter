@@ -1,6 +1,6 @@
 import { Outlet, useNavigate, } from 'react-router-dom'
 import { GithubFilled, } from '@ant-design/icons';
-import { ProLayout } from '@ant-design/pro-layout';
+import { ProLayout } from '@ant-design/pro-components';
 
 import logo from '@/assets/logo.svg';
 

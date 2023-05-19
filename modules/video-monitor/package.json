@@ -15,7 +15,7 @@
     "@sensoro-design/icons": "1.51.0",
     "@sensoro-design/styles": "1.12.1",
     "@pansy/micro-shared": "workspace:*",
-    "antd": "4.23.2",
+    "antd": "5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6.3.0",
